@@ -19,11 +19,9 @@ export default function Navbar() {
     <nav>
       <div className="wrap nav-inner">
         <Link href="/" onClick={closeMenu}>
-          {/* Using a standard img tag because next/image requires domains config for external URLs, 
-              which is safer for absolute URLs from codetrain's live site */}
           <img
             className="logo"
-            src="https://codetrainafrica.com/_next/image?url=%2Fcodetrain-logo.png&w=256&q=75"
+            src="/codetrain-logo.png"
             alt="Codetrain Africa"
           />
         </Link>

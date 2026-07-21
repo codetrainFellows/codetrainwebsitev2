@@ -34,7 +34,7 @@ export default function Hire() {
             </div>
           </div>
           <img
-            src="https://codetrainafrica.com/_next/image?url=%2Fpeople%2Fgroup1.jpg&w=1080&q=75"
+            src="/people/group1.jpg"
             alt="Codetrain graduates"
           />
         </div>

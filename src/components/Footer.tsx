@@ -10,7 +10,7 @@ export default function Footer() {
           <div>
             <span className="foot-logo">
               <img
-                src="https://codetrainafrica.com/_next/image?url=%2Fcodetrain-logo.png&w=256&q=75"
+                src="/codetrain-logo.png"
                 alt="Codetrain Africa"
               />
             </span>

@@ -42,7 +42,7 @@ export default function Kids() {
             </div>
           </div>
           <img
-            src="https://codetrainafrica.com/_next/image?url=%2Fpeople%2Fexp7.jpg&w=828&q=75"
+            src="/people/exp7.jpg"
             alt="Young innovators at Codetrain Solara"
           />
         </div>

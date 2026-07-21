@@ -41,7 +41,7 @@ export default function AiProgram() {
             </div>
           </div>
           <img
-            src="https://codetrainafrica.com/_next/image?url=%2Fpeople%2Fgroup3.jpg&w=1080&q=75"
+            src="/people/group3.jpg"
             alt="AI Talent Accelerator students"
           />
         </div>

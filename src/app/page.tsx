@@ -48,7 +48,7 @@ export default function Home() {
           </div>
           <div className="hero-img">
             <img
-              src="https://codetrainafrica.com/_next/image?url=%2Fpeople%2Fgroup1.jpg&w=1080&q=75"
+              src="/people/group1.jpg"
               alt="Codetrain students at Demo Day"
             />
             <div className="float-stat">
@@ -353,7 +353,7 @@ export default function Home() {
           <div className="story-grid">
             <article className="story">
               <img
-                src="https://codetrainafrica.com/_next/image?url=%2Fpeople%2Fkorkor.jpg&w=1080&q=75"
+                src="/people/korkor.jpg"
                 alt="Korkor Mensah"
               />
               <div className="story-body">
@@ -369,7 +369,7 @@ export default function Home() {
             </article>
             <article className="story">
               <img
-                src="https://codetrainafrica.com/_next/image?url=%2Fpeople%2FGerald.jpg&w=1080&q=75"
+                src="/people/Gerald.jpg"
                 alt="Gerald"
               />
               <div className="story-body">
@@ -385,7 +385,7 @@ export default function Home() {
             </article>
             <article className="story">
               <img
-                src="https://codetrainafrica.com/_next/image?url=%2Fpeople%2FOfoe.jpg&w=1080&q=75"
+                src="/people/Ofoe.jpg"
                 alt="Ofoe Fiergbor"
               />
               <div className="story-body">
@@ -623,7 +623,7 @@ export default function Home() {
             </div>
           </div>
           <img
-            src="https://codetrainafrica.com/_next/image?url=%2Fpeople%2Fcampus2.jpg&w=1920&q=75"
+            src="/people/campus2.jpg"
             alt="Codetrain East Legon campus"
           />
         </div>

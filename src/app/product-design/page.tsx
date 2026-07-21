@@ -41,7 +41,7 @@ export default function ProductDesign() {
             </div>
           </div>
           <img
-            src="https://codetrainafrica.com/_next/image?url=%2Fpeople%2Fgroup2.jpg&w=1080&q=75"
+            src="/people/uximage.jpg"
             alt="Product design students at Codetrain"
           />
         </div>

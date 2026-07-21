@@ -39,7 +39,7 @@ export default function SoftwareEngineering() {
             </div>
           </div>
           <img
-            src="https://codetrainafrica.com/_next/image?url=%2Fpeople%2Fsoftware.jpg&w=1920&q=75"
+            src="/people/software.jpg"
             alt="Software engineering class at Codetrain"
           />
         </div>
