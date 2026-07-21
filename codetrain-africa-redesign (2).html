@@ -1,0 +1,950 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Codetrain Africa | Software Engineering, Product Design & AI Training in Ghana</title>
+<meta name="description" content="Ghana's leading AI and software engineering training institution. 18-month Full Stack AI Developer and Product Design programmes, the AI Program (Talent Accelerator), the AI Advantage Programme, and Codetrain Kids. 700+ alumni, 89% job placement — independently verified.">
+<style>
+:root{
+  --violet:#1B1049; --violet-dark:#140C38; --violet-soft:#EDEAF7;
+  --yellow:#FFBE0C; --yellow-dark:#E8AC00; --pink:#FF006E; --indigo:#7A3CE3; --lblue:#49CAE4;
+  --ink:#1B1049; --sub:rgba(27,16,73,.66); --line:#E5E5E5; --bg:#FFFFFF; --alt:#F7F6FB;
+  --r:16px; --shadow:0 10px 30px rgba(27,16,73,.10);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Helvetica Neue',Helvetica,Arial,system-ui,sans-serif;color:var(--ink);background:var(--bg);line-height:1.65;font-size:16px}
+h1,h2,h3,h4{font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;line-height:1.2;color:var(--violet)}
+h1{font-size:clamp(2rem,4.8vw,3.15rem);font-weight:800;letter-spacing:-.01em}
+h2{font-size:clamp(1.55rem,3.2vw,2.15rem);font-weight:700}
+h3{font-size:1.15rem;font-weight:600}
+p{color:var(--sub)}
+a{text-decoration:none;color:inherit}
+img{max-width:100%;display:block}
+.wrap{max-width:1140px;margin:0 auto;padding:0 22px}
+section{padding:76px 0}
+.center{text-align:center}
+.section-head{max-width:680px;margin:0 auto 44px;text-align:center}
+.section-head p{margin-top:12px}
+.kicker{display:inline-block;font-size:.78rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--violet);background:var(--violet-soft);padding:6px 14px;border-radius:999px;margin-bottom:14px}
+
+/* announcement + nav */
+.announce{background:var(--violet);color:#EAF3EE;font-size:.83rem;text-align:center;padding:9px 16px}
+.announce a{color:var(--yellow);font-weight:600;text-decoration:underline;text-underline-offset:2px}
+nav{position:sticky;top:0;z-index:80;background:rgba(255,255,255,.96);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;height:68px;gap:20px}
+.logo{height:40px;width:auto}
+.nav-links{display:flex;align-items:center;gap:24px;font-size:.92rem;font-weight:500}
+.nav-links>a:hover{color:var(--violet)}
+.dropdown{position:relative}
+.dropdown>button{background:none;border:none;font:inherit;font-weight:500;color:var(--ink);cursor:pointer;padding:6px 0}
+.dropdown-menu{position:absolute;top:calc(100% + 10px);left:-16px;background:#fff;border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow);padding:8px;min-width:300px;display:none}
+.dropdown:hover .dropdown-menu,.dropdown:focus-within .dropdown-menu{display:block}
+.dropdown-menu a{display:flex;gap:12px;align-items:flex-start;padding:11px 12px;border-radius:10px;font-size:.9rem;font-weight:600}
+.dropdown-menu a:hover{background:var(--alt)}
+.dropdown-menu small{display:block;font-weight:400;color:var(--sub);font-size:.78rem;margin-top:1px}
+.tag-dot{width:10px;height:10px;border-radius:50%;margin-top:7px;flex-shrink:0}
+.btn{display:inline-block;padding:13px 26px;border-radius:10px;font-weight:600;font-size:.94rem;cursor:pointer;border:1.6px solid transparent;transition:.16s}
+.btn-primary{background:var(--yellow);color:var(--violet);font-weight:700}
+.btn-primary:hover{background:var(--yellow-dark)}
+.btn-outline{border-color:var(--violet);color:var(--violet)}
+.btn-outline:hover{background:var(--violet);color:#fff}
+.btn-sm{padding:10px 20px;font-size:.88rem}
+.hamburger{display:none;background:none;border:none;font-size:1.55rem;color:var(--ink);cursor:pointer}
+
+/* hero */
+.hero{padding:72px 0 68px;background:linear-gradient(180deg,#FFF 0%,#F4F2FB 100%)}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}
+.hero h1 .accent{color:var(--violet)}
+.hero ul{list-style:none;margin:22px 0 28px;display:grid;gap:11px}
+.hero ul li{padding-left:30px;position:relative;color:var(--sub);font-size:1rem}
+.hero ul li::before{content:'✓';position:absolute;left:0;top:0;width:21px;height:21px;border-radius:50%;background:var(--violet-soft);color:var(--violet);font-weight:700;font-size:.75rem;display:grid;place-items:center}
+.hero-ctas{display:flex;gap:14px;flex-wrap:wrap}
+.hero-note{margin-top:16px;font-size:.86rem;color:var(--sub)}
+.hero-note b{color:var(--violet)}
+.hero-img{position:relative}
+.hero-img img{border-radius:22px;box-shadow:var(--shadow);width:100%;object-fit:cover;aspect-ratio:5/4}
+.float-stat{position:absolute;bottom:-18px;left:-18px;background:#fff;border-radius:14px;box-shadow:var(--shadow);padding:14px 20px;display:flex;gap:14px;align-items:center}
+.float-stat b{font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:1.5rem;color:var(--violet)}
+.float-stat span{font-size:.8rem;color:var(--sub);max-width:160px;line-height:1.35;display:block}
+
+/* impact */
+.impact{background:var(--violet);color:#fff;padding:52px 0}
+.impact-grid{display:grid;grid-template-columns:1.2fr repeat(3,1fr);gap:34px;align-items:center}
+.impact h2{color:#fff;font-size:1.45rem}
+.impact p{color:#B9B3D6;font-size:.9rem;margin-top:8px}
+.impact .num b{font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:2.5rem;font-weight:800;color:#fff;display:block;line-height:1}
+.impact .num span{font-size:.86rem;color:#B9B3D6}
+
+/* courses */
+.group-label{font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-weight:700;font-size:1.05rem;margin:36px 0 16px;display:flex;align-items:center;gap:12px}
+.group-label::after{content:'';flex:1;height:1px;background:var(--line)}
+.course-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.course{background:#fff;border:1px solid var(--line);border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column;transition:.18s;position:relative}
+.course:hover{box-shadow:var(--shadow);transform:translateY(-3px)}
+.course-top{height:6px}
+.course-body{padding:26px;display:flex;flex-direction:column;gap:12px;flex:1}
+.course-tags{display:flex;gap:8px;flex-wrap:wrap}
+.tag{font-size:.72rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;padding:4px 11px;border-radius:999px;background:var(--alt);color:var(--sub)}
+.tag.hot{background:var(--yellow);color:var(--violet)}
+.course p{font-size:.93rem}
+.course .facts-line{font-size:.83rem;color:var(--sub);display:flex;gap:8px;flex-wrap:wrap;font-weight:500}
+.course .facts-line b{color:var(--ink)}
+.course .facts-line i{font-style:normal;color:#C6CBD4}
+.course-cta{margin-top:auto;display:flex;gap:14px;align-items:center;padding-top:10px}
+.more{font-weight:700;font-size:.9rem;color:var(--pink)}
+.more:hover{text-decoration:underline;text-underline-offset:3px}
+
+/* experience */
+.exp-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.exp{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:24px;transition:.16s}
+.exp:hover{box-shadow:var(--shadow)}
+.exp .ic{width:44px;height:44px;border-radius:12px;background:var(--violet-soft);display:grid;place-items:center;font-size:1.25rem;margin-bottom:14px}
+.exp h3{font-size:1rem;margin-bottom:6px}
+.exp p{font-size:.88rem}
+
+/* video */
+.video-frame{position:relative;width:100%;aspect-ratio:16/9;border-radius:20px;overflow:hidden;box-shadow:var(--shadow);background:#000}
+.video-frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+
+/* stories */
+.story-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.story{background:#fff;border:1px solid var(--line);border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column}
+.story img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.story-body{padding:22px;display:flex;flex-direction:column;gap:10px;flex:1}
+.story-body p{font-size:.9rem}
+.story-body .who{margin-top:auto;padding-top:8px}
+.story-body .who b{display:block;font-size:.95rem}
+.story-body .who span{font-size:.82rem;color:var(--sub)}
+
+/* fees */
+.fee-cols{display:grid;grid-template-columns:1.25fr .75fr;gap:22px;align-items:start}
+.fee-card{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:28px}
+.fee-card h3{margin-bottom:4px}
+.fee-card .price{font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-weight:800;font-size:1.9rem;color:var(--ink)}
+.fee-card .price small{font-size:.85rem;color:var(--sub);font-weight:500}
+.pay-opts{display:grid;gap:12px;margin-top:18px}
+.pay-opt{display:flex;gap:14px;align-items:flex-start;background:var(--alt);border-radius:12px;padding:14px 16px}
+.pay-opt b{font-size:.92rem;display:block}
+.pay-opt span{font-size:.85rem;color:var(--sub)}
+.pay-opt .n{width:26px;height:26px;border-radius:50%;background:var(--violet);color:#fff;font-weight:700;font-size:.8rem;display:grid;place-items:center;flex-shrink:0;margin-top:2px}
+.mini-fee{border-bottom:1px solid var(--line);padding:16px 0}
+.mini-fee:last-child{border-bottom:none}
+.mini-fee b{display:block;font-size:.95rem}
+.mini-fee span{font-size:.85rem;color:var(--sub)}
+.mini-fee .p{float:right;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-weight:700;color:var(--violet)}
+
+/* campus */
+.campus-grid{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center}
+.campus-grid img{border-radius:20px;box-shadow:var(--shadow);aspect-ratio:4/3;object-fit:cover;width:100%}
+.contact-rows{display:grid;gap:14px;margin-top:22px}
+.contact-row{display:flex;gap:14px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px 18px;font-weight:600;font-size:.94rem}
+.contact-row .ic{width:38px;height:38px;border-radius:10px;background:var(--violet-soft);display:grid;place-items:center;flex-shrink:0}
+.contact-row small{display:block;font-weight:500;color:var(--sub);font-size:.8rem}
+
+/* faq */
+.faq-wrap{max-width:780px;margin:0 auto}
+details{background:#fff;border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin-bottom:12px}
+summary{cursor:pointer;font-weight:600;font-size:.98rem;list-style:none;display:flex;justify-content:space-between;gap:12px;align-items:center}
+summary::-webkit-details-marker{display:none}
+summary::after{content:'+';color:var(--violet);font-weight:700;font-size:1.2rem;flex-shrink:0}
+details[open] summary::after{content:'−'}
+details p{margin-top:10px;font-size:.92rem}
+
+/* partners */
+.partner-row{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
+.partner-row span{border:1px solid var(--line);background:#fff;border-radius:999px;padding:9px 20px;font-size:.85rem;font-weight:600;color:var(--sub)}
+
+/* cta band */
+.cta-band{background:linear-gradient(120deg,var(--violet),#2A1A6E);border-radius:24px;padding:58px 40px;text-align:center;color:#fff}
+.cta-band h2{color:#fff}
+.cta-band p{color:#D8D2F2;max-width:540px;margin:12px auto 28px}
+.cta-band .btn-outline{border-color:#fff;color:#fff}
+.cta-band .btn-outline:hover{background:#fff;color:var(--violet)}
+.cta-band .btn-primary{background:var(--yellow);color:var(--violet)}
+.cta-band .btn-primary:hover{background:var(--yellow-dark)}
+
+/* course pages */
+.chero{padding:64px 0 52px;background:linear-gradient(180deg,#FFF,#F4F2FB);border-bottom:1px solid var(--line)}
+.chero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}
+.chero p.lede{font-size:1.05rem;margin:16px 0 26px}
+.chero img{border-radius:20px;box-shadow:var(--shadow);aspect-ratio:5/4;object-fit:cover;width:100%}
+.facts{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:34px}
+.fact{background:#fff;border:1px solid var(--line);border-radius:12px;padding:15px 17px}
+.fact span{font-size:.72rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--sub);display:block;margin-bottom:4px}
+.fact b{font-size:.95rem}
+.blocks{display:grid;gap:16px}
+.block{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:24px 26px;display:grid;grid-template-columns:auto 1fr;gap:18px;align-items:start}
+.block .step-n{min-width:56px;height:42px;padding:0 10px;border-radius:12px;color:#fff;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-weight:700;display:grid;place-items:center;font-size:.85rem;text-align:center}
+.block h3{margin-bottom:4px}
+.block p{font-size:.92rem}
+.block small{font-size:.75rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--sub);display:block;margin-bottom:3px}
+.milestone-table{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(--line);border-radius:var(--r);overflow:hidden}
+.milestone-table th,.milestone-table td{padding:14px 18px;text-align:left;font-size:.9rem;border-bottom:1px solid var(--line)}
+.milestone-table th{background:var(--alt);font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:.82rem;font-weight:700}
+.milestone-table tr:last-child td{border-bottom:none}
+.milestone-table td:first-child{font-weight:600}
+.twocol{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:start}
+ul.checks{list-style:none;display:grid;gap:11px;margin-top:16px}
+ul.checks li{padding-left:30px;position:relative;color:var(--sub);font-size:.95rem}
+ul.checks li::before{content:'✓';position:absolute;left:0;top:1px;width:21px;height:21px;border-radius:50%;background:var(--violet-soft);color:var(--violet);font-weight:700;font-size:.75rem;display:grid;place-items:center}
+ul.crosses li::before{content:'✕';background:#FFE5F0;color:var(--pink)}
+
+/* footer */
+footer{background:var(--violet);color:#B9B3D6;padding:60px 0 30px}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.1fr;gap:38px;margin-bottom:44px}
+footer h4{color:#fff;font-size:.94rem;margin-bottom:16px}
+footer a{display:block;font-size:.89rem;margin-bottom:10px}
+footer a:hover{color:#fff}
+.foot-bottom{border-top:1px solid #2E2463;padding-top:24px;font-size:.82rem;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+.foot-logo{background:#fff;border-radius:10px;padding:8px 12px;display:inline-block;margin-bottom:14px}
+.foot-logo img{height:34px}
+
+.page{display:none}
+.page.active{display:block}
+
+@media(max-width:920px){
+  .hero-grid,.chero-grid,.campus-grid,.fee-cols,.twocol{grid-template-columns:1fr}
+  .impact-grid{grid-template-columns:1fr 1fr}
+  .exp-grid,.facts{grid-template-columns:repeat(2,1fr)}
+  .course-grid,.story-grid{grid-template-columns:1fr}
+  .float-stat{left:12px;bottom:12px}
+  .hamburger{display:block}
+  .nav-links{display:none;position:absolute;top:68px;left:0;right:0;background:#fff;flex-direction:column;align-items:flex-start;padding:22px;gap:18px;border-bottom:1px solid var(--line)}
+  .nav-links.open{display:flex}
+  .dropdown-menu{position:static;display:block;border:none;box-shadow:none;background:transparent;padding:8px 0 0 4px;min-width:0}
+  .foot-grid{grid-template-columns:1fr 1fr}
+  .milestone-table th,.milestone-table td{padding:11px 12px;font-size:.84rem}
+}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<div class="announce">🎓 Admissions in progress — July cohort for our 18-month programmes · AI programmes start October. <a href="https://tally.so/r/wodqVO" target="_blank" rel="noopener">Join our free info session</a></div>
+
+<nav>
+  <div class="wrap nav-inner">
+    <a href="#/"><img class="logo" src="https://codetrainafrica.com/_next/image?url=%2Fcodetrain-logo.png&w=256&q=75" alt="Codetrain Africa"></a>
+    <button class="hamburger" aria-label="Menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">☰</button>
+    <div class="nav-links">
+      <a href="#/#about">About Us</a>
+      <div class="dropdown">
+        <button aria-haspopup="true">Courses ▾</button>
+        <div class="dropdown-menu">
+          <a href="#/software-engineering"><span class="tag-dot" style="background:var(--violet)"></span><span>Full Stack AI Developer<small>Flagship · 18 months · beginner-friendly</small></span></a>
+          <a href="#/product-design"><span class="tag-dot" style="background:var(--pink)"></span><span>Product Design<small>18 months · research to published products</small></span></a>
+          <a href="#/ai-program"><span class="tag-dot" style="background:var(--indigo)"></span><span>AI Program — Talent Accelerator<small>16 weeks · for working developers</small></span></a>
+          <a href="#/ai-advantage"><span class="tag-dot" style="background:var(--lblue)"></span><span>AI Advantage Programme<small>3 Saturdays · for professionals, no coding</small></span></a>
+          <a href="#/kids"><span class="tag-dot" style="background:var(--yellow)"></span><span>Codetrain Solara (Kids)<small>Ages 8–14 · online Saturdays</small></span></a>
+        </div>
+      </div>
+      <a href="#/#stories">Success Stories</a>
+      <a href="#/hire">Hire a Grad</a>
+      <a href="https://codetrainafrica.com/partnerships" target="_blank" rel="noopener">Partnerships</a>
+      <a href="https://codetrainafrica.com/donate" target="_blank" rel="noopener">Donate</a>
+      <a class="btn btn-primary btn-sm" href="https://codetrainafrica.heiapply.com/application" target="_blank" rel="noopener">Apply Now</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ════════ HOME ════════ -->
+<main id="page-home" class="page active">
+
+<header class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="kicker">Accra · In-person &amp; online · Since 2017</span>
+      <h1>Ghana's leading <span class="accent">AI &amp; software engineering</span> training institution.</h1>
+      <ul>
+        <li>We take complete beginners and turn them into job-ready tech professionals in 18 months.</li>
+        <li>Build real projects and a professional portfolio from month one.</li>
+        <li>89% graduate employment rate — independently verified.</li>
+      </ul>
+      <div class="hero-ctas">
+        <a class="btn btn-primary" href="#/#courses">Explore courses</a>
+        <a class="btn btn-outline" href="https://calendly.com/fosterfrimpong63/one-one-with-codetrain-admissions" target="_blank" rel="noopener">Let's talk</a>
+      </div>
+      <p class="hero-note"><b>●</b> Admission is in progress — join the July cohort</p>
+    </div>
+    <div class="hero-img">
+      <img src="https://codetrainafrica.com/_next/image?url=%2Fpeople%2Fgroup1.jpg&w=1080&q=75" alt="Codetrain students at Demo Day">
+      <div class="float-stat"><b>89%</b><span>of graduates employed — independently audited</span></div>
+    </div>
+  </div>
+</header>
+
+<div class="impact" id="about">
+  <div class="wrap impact-grid">
+    <div>
+      <h2>Our Impact</h2>
+      <p>Since 2017, Codetrain has trained 700+ developers — with graduates at Microsoft, Andela, mPharma, Hubtel, and companies in Germany, the UK, the US, Kenya, and Canada.</p>
+    </div>
+    <div class="num"><b>700+</b><span>developers trained since 2017</span></div>
+    <div class="num"><b>89%</b><span>employment rate — independently audited</span></div>
+    <div class="num"><b>91%</b><span>report improved quality of life (60 Decibels)</span></div>
+  </div>
+</div>
+
+<section id="courses">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker">Our Courses</span>
+      <h2>Find the right course for where you are today</h2>
+      <p>Starting from zero, already a developer, a busy professional, or a parent — there's a Codetrain course built for you.</p>
+    </div>
+
+    <div class="group-label">🚀 18-month career programmes — become a tech professional</div>
+    <div class="course-grid">
+      <article class="course">
+        <div class="course-top" style="background:var(--violet)"></div>
+        <div class="course-body">
+          <div class="course-tags"><span class="tag hot">Flagship</span><span class="tag">Beginner-friendly</span></div>
+          <h3>Full Stack AI Developer (Software Engineering)</h3>
+          <p>From zero to building and shipping AI-powered software products. Three milestone-gated phases: master full-stack development, integrate AI into real products, then deploy a production AI system with real users — assessed by industry reviewers.</p>
+          <div class="facts-line"><b>18 months</b><i>•</i><span>In-person or online · weekday or weekend</span><i>•</i><b>GHS 38,500</b><span>· up to 50% scholarship</span></div>
+          <div class="course-cta"><a class="btn btn-primary btn-sm" href="https://codetrainafrica.heiapply.com/application" target="_blank" rel="noopener">Enroll now</a><a class="more" href="#/software-engineering">Course details →</a></div>
+        </div>
+      </article>
+      <article class="course">
+        <div class="course-top" style="background:var(--pink)"></div>
+        <div class="course-body">
+          <div class="course-tags"><span class="tag">Beginner-friendly</span><span class="tag">Career changers welcome</span></div>
+          <h3>Product Design</h3>
+          <p>Design digital products from research through to live, published applications. Master design fundamentals, AI-assisted workflows, Figma, and Framer — graduating with a capstone product used by real users.</p>
+          <div class="facts-line"><b>18 months</b><i>•</i><span>In-person or online · weekday or weekend</span><i>•</i><b>GHS 38,500</b><span>· up to 50% scholarship</span></div>
+          <div class="course-cta"><a class="btn btn-primary btn-sm" href="https://codetrainafrica.heiapply.com/application" target="_blank" rel="noopener">Enroll now</a><a class="more" href="#/product-design">Course details →</a></div>
+        </div>
+      </article>
+    </div>
+
+    <div class="group-label">🤖 AI programmes — upgrade the skills you already have</div>
+    <div class="course-grid">
+      <article class="course">
+        <div class="course-top" style="background:var(--indigo)"></div>
+        <div class="course-body">
+          <div class="course-tags"><span class="tag">For working developers</span></div>
+          <h3>AI Program — Talent Accelerator</h3>
+          <p>A 16-week intensive that turns experienced web developers into AI engineers. LLM apps, RAG, agents, and production systems — graduating with a deployed AI product that has real users.</p>
+          <div class="facts-line"><b>16 weeks</b><span>(12-week fast track)</span><i>•</i><span>Virtual &amp; in-person</span><i>•</i><b>GHS 15,000</b></div>
+          <div class="course-cta"><a class="btn btn-primary btn-sm" href="https://codetrainafrica.heiapply.com/application" target="_blank" rel="noopener">Apply now</a><a class="more" href="#/ai-program">Course details →</a></div>
+        </div>
+      </article>
+      <article class="course">
+        <div class="course-top" style="background:var(--lblue)"></div>
+        <div class="course-body">
+          <div class="course-tags"><span class="tag">For professionals</span><span class="tag">No coding required</span></div>
+          <h3>AI Advantage Programme</h3>
+          <p>Three Saturdays to master a practical AI method, build a working AI assistant from your real work, and present it at a public Demo Day. Application-only executive cohorts, capped at 25 — for finance, HR, education, sales, NGO, and admin professionals.</p>
+          <div class="facts-line"><b>3 Saturdays</b><i>•</i><span>By application</span><i>•</i><b>GHS 2,800</b></div>
+          <div class="course-cta"><a class="btn btn-primary btn-sm" href="https://codetrainafrica.heiapply.com/application" target="_blank" rel="noopener">Apply for a cohort</a><a class="more" href="#/ai-advantage">Programme details →</a></div>
+        </div>
+      </article>
+    </div>
+
+    <div class="group-label">🧒 For the next generation</div>
+    <div class="course-grid">
+      <article class="course" style="grid-column:1/-1">
+        <div class="course-top" style="background:var(--yellow)"></div>
+        <div class="course-body">
+          <div class="course-tags"><span class="tag">Ages 8–14</span><span class="tag">Online Saturdays · 12noon–3pm GMT</span><span class="tag">Enrol anytime</span></div>
+          <h3>Codetrain Solara — Coding for Kids</h3>
+          <p>Africa's premier online school for future innovators. Through project-based learning in coding, AI, and leadership, kids build real apps and games — and grow into innovators, leaders, and entrepreneurs. Includes an in-person Summer Bootcamp and Annual Innovation Conference.</p>
+          <div class="facts-line"><b>3–5 years</b><span>(annual subscription)</span><i>•</i><b>GHS 10,000/year</b><span>· part-scholarships available</span></div>
+          <div class="course-cta"><a class="btn btn-primary btn-sm" href="https://codetrainafrica.heiapply.com/application" target="_blank" rel="noopener">Enroll now</a><a class="more" href="#/kids">Course details →</a></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap twocol" style="align-items:center">
+    <div class="video-frame">
+      <iframe src="https://www.youtube.com/embed/-YUY-MFGdQw?si=WHj55QBrwtf4kJMl" title="From Codetrain Fellow to Senior Software Engineer — Awal's journey" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+    <div>
+      <span class="kicker">Earn Back Your Tuition</span>
+      <h2>From Codetrain fellow to Senior Developer in Canada</h2>
+      <p style="margin-top:12px">Five years after joining Codetrain, Awal made the leap into the international tech scene — a remote role with Big Viking Games, a Canadian gaming company, where he rose to Senior Developer in less than a year. He works from his home in Ghana, or anywhere he chooses.</p>
+      <p style="margin-top:10px">The high demand for tech professionals makes it one of the best-paying industries globally — on average, our graduates move from little or no income to $800–1,000/month after placement.</p>
+      <div style="margin-top:22px;display:flex;gap:12px;flex-wrap:wrap">
+        <a class="btn btn-primary" href="https://codetrainafrica.heiapply.com/application" target="_blank" rel="noopener">Enroll now</a>
+        <a class="btn btn-outline" href="#/#stories">More success stories</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="background:var(--alt)" id="stories">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker">Success Stories</span>
+      <h2>Real people. Real transformations.</h2>
+      <p>Our graduates work at Microsoft, Andela, mPharma, Hubtel, and companies in Germany, the UK, the US, and Canada — many remotely from Ghana.</p>
+    </div>
+    <div class="story-grid">
+      <article class="story">
+        <img src="https://codetrainafrica.com/_next/image?url=%2Fpeople%2Fkorkor.jpg&w=1080&q=75" alt="Korkor Mensah">
+        <div class="story-body">
+          <p>Korkor enrolled after struggling to help her kids with coding homework despite her IT experience. She never missed a class — and earned a promotion and a whole new career trajectory.</p>
+          <div class="who"><b>Korkor Mensah</b><span>Software Engineer</span></div>
+        </div>
+      </article>
+      <article class="story">
+        <img src="https://codetrainafrica.com/_next/image?url=%2Fpeople%2FGerald.jpg&w=1080&q=75" alt="Gerald">
+        <div class="story-body">
+          <p>Gerald was hired on the spot by Meqasa's CEO during Demo Day. He now works at Hubtel, building expertise, solving problems, and growing his software development career.</p>
+          <div class="who"><b>Gerald</b><span>Software Engineer, Hubtel</span></div>
+        </div>
+      </article>
+      <article class="story">
+        <img src="https://codetrainafrica.com/_next/image?url=%2Fpeople%2FOfoe.jpg&w=1080&q=75" alt="Ofoe Fiergbor">
+        <div class="story-body">
+          <p>Two years after graduating, Ofoe transitioned from accounting into a thriving tech career at Turntabl — with the flexibility, job security, and problem-solving mindset he was looking for.</p>
+          <div class="who"><b>Ofoe Fiergbor</b><span>Software Engineer, Turntabl</span></div>
+        </div>
+      </article>
+    </div>
+    <p class="center" style="margin-top:30px"><a class="btn btn-outline" href="https://codetrainafrica.com/success-stories" target="_blank" rel="noopener">Discover more success stories</a></p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker">The Codetrain Experience</span>
+      <h2>More than a bootcamp</h2>
+      <p>An internationally recognised educational journey — hands-on learning, mentorship, and career guidance in an inclusive, empowering environment.</p>
+    </div>
+    <div class="exp-grid">
+      <div class="exp"><div class="ic">🎤</div><h3>Demo Day &amp; Career Fair</h3><p>Present your projects to industry leaders and hiring companies. Graduates have received offers on the spot.</p></div>
+      <div class="exp"><div class="ic">🌍</div><h3>Global experience</h3><p>International industry standards in the curriculum, and graduates working for employers in Germany, the UK, the US, Kenya, and Canada.</p></div>
+      <div class="exp"><div class="ic">🤝</div><h3>Supporting women &amp; persons with disability</h3><p>Part and full scholarships for women, neurodivergent individuals, and persons living with sickle cell or disability.</p></div>
+      <div class="exp"><div class="ic">🛡️</div><h3>Safeguarding</h3><p>A safe, harassment-free environment with strict policies protecting every student — with focus on underrepresented groups.</p></div>
+    </div>
+    <div class="twocol" style="margin-top:44px;align-items:center">
+      <div>
+        <h3 style="font-size:1.3rem;margin-bottom:8px">Experience the Codetrain Demo Day</h3>
+        <p>Your journey culminates in Demo Day &amp; Career Fair — presenting your projects to industry leaders, potential employers, and the Codetrain community. Watch what it looks like.</p>
+      </div>
+      <div class="video-frame">
+        <iframe src="https://www.youtube.com/embed/uqozP61jgKQ?si=G4gwbtAlaS9H-Tsj" title="Codetrain Demo Day" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="background:var(--alt);padding:52px 0">
+  <div class="wrap">
+    <div class="section-head" style="margin-bottom:28px">
+      <span class="kicker">Partners &amp; Supporters</span>
+      <h2 style="font-size:1.4rem">Trusted by leading organisations</h2>
+    </div>
+    <div class="partner-row">
+      <span>GIZ</span><span>SAP</span><span>Chancen International</span><span>Bloomberg</span><span>I&amp;P Investments</span><span>Berlin Partner</span><span>Jobberman</span><span>BlackInTech</span><span>Kaatch</span><span>Terratalent</span><span>AfricaBerlin</span>
+    </div>
+  </div>
+</section>
+
+<section id="fees">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker">Our Fees</span>
+      <h2>Transparent fees. Flexible ways to pay.</h2>
+      <p>Investing in your future is an important decision — so we keep pricing clear and offer three ways to fund your training.</p>
+    </div>
+    <div class="fee-cols">
+      <div class="fee-card">
+        <span class="tag hot" style="margin-bottom:10px;display:inline-block">18-month career programmes</span>
+        <h3>Full Stack AI Developer · Product Design</h3>
+        <div class="price">GHS 38,500 <small>· $3,000 for international applicants · up to 50% scholarship available</small></div>
+        <div class="pay-opts">
+          <div class="pay-opt"><span class="n">1</span><div><b>Pay upfront</b><span>Full tuition before the programme starts.</span></div></div>
+          <div class="pay-opt"><span class="n">2</span><div><b>Payment plan</b><span>Start with an initial payment, then monthly installments while you study.</span></div></div>
+          <div class="pay-opt"><span class="n">3</span><div><b>Income Share Agreement — GHS 0 deposit</b><span>Pay tuition only after landing a job, in partnership with Chancen International.</span></div></div>
+        </div>
+        <div style="margin-top:20px;display:flex;gap:12px;flex-wrap:wrap">
+          <a class="btn btn-primary btn-sm" href="https://codetrainafrica.com/payment-plan" target="_blank" rel="noopener">Ask for a payment plan</a>
+          <a class="btn btn-outline btn-sm" href="https://codetrainafrica.com/scholarship" target="_blank" rel="noopener">Apply for a scholarship</a>
+        </div>
+      </div>
+      <div class="fee-card">
+        <span class="tag" style="margin-bottom:10px;display:inline-block">Short programmes</span>
+        <div class="mini-fee"><span class="p">GHS 15,000</span><b>AI Program — Talent Accelerator</b><span>16 weeks · for working developers</span></div>
+        <div class="mini-fee"><span class="p">GHS 2,800</span><b>AI Advantage Programme</b><span>3 Saturdays · paid at enrolment</span></div>
+        <div class="mini-fee"><span class="p">GHS 10,000/yr</span><b>Codetrain Solara (Kids)</b><span>Ages 8–14 · rolling admissions</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="background:var(--alt)" id="campus">
+  <div class="wrap campus-grid">
+    <div>
+      <span class="kicker">Discover Our Campus</span>
+      <h2>Learn in East Legon — or from anywhere</h2>
+      <p style="margin-top:12px">In-person training at our East Legon campus, or live, interactive online classes — same curriculum, same instructors, same milestones. Students join from across Ghana, Nigeria, Cameroon, Liberia, and The Gambia.</p>
+      <div class="contact-rows">
+        <a class="contact-row" href="tel:+233545792397"><span class="ic">📞</span><span><small>Talk to us</small>+233 545 792 397</span></a>
+        <a class="contact-row" href="mailto:admissions@codetrainafrica.com"><span class="ic">✉️</span><span><small>Email us</small>admissions@codetrainafrica.com</span></a>
+        <div class="contact-row"><span class="ic">📍</span><span><small>Visit us</small>16a Parsnip Street, East Legon, Accra — near the A&amp;C Mall</span></div>
+      </div>
+    </div>
+    <img src="https://codetrainafrica.com/_next/image?url=%2Fpeople%2Fcampus2.jpg&w=1920&q=75" alt="Codetrain East Legon campus">
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker">FAQ</span>
+      <h2>Frequently asked questions</h2>
+      <p>Have questions about our programs, fees, or anything else? Find answers here.</p>
+    </div>
+    <div class="faq-wrap">
+      <details><summary>Do I need any tech background to join?</summary><p>No. You don't need a degree, a computer science certificate, or previous tech experience. Most of our graduates started from zero — including a medical doctor, a finance executive, and a former farm worker. You need computer literacy, teachability, willingness to put in the work — and to pass our intake assessment.</p></details>
+      <details><summary>How long are the programmes?</summary><p>The Full Stack AI Developer and Product Design programmes are 18 months. The AI Program (Talent Accelerator) is 16 weeks, with a 12-week accelerated track by assessment. The AI Advantage Programme runs over 3 Saturdays.</p></details>
+      <details><summary>Can I join while working or still in school?</summary><p>Yes — that's exactly what our weekend class is for. Both delivery modes (in-person and online) offer weekday or weekend schedules, so you can train without leaving your current job or studies.</p></details>
+      <details><summary>I'm not in Accra. Can I still join?</summary><p>Yes. Our online classes are live and interactive — same sessions, same instructors, same milestones as in-person. Students have joined from Kumasi, Cape Coast, Tamale, and from Nigeria, Cameroon, Liberia, and The Gambia.</p></details>
+      <details><summary>Are you sure people get jobs after?</summary><p>89% of our graduates are employed after the programme — a number that is independently audited, not a claim we made up. Our graduates work at Microsoft, Andela, mPharma, Hubtel, and companies in Germany, the UK, the US, and Canada.</p></details>
+      <details><summary>Can I really start with zero deposit?</summary><p>Yes. Through our Income Share Agreement with Chancen International, eligible students start with no deposit and pay tuition only after landing a job. Scholarships of up to 50% and payment plans are also available.</p></details>
+      <details><summary>Does Codetrain provide laptops?</summary><p>Not currently — you'll need your own laptop for training.</p></details>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="cta-band">
+      <h2>Are you excited to start your career?</h2>
+      <p>Your journey to a fulfilling tech career starts here. Apply in minutes, or book a free 1-on-1 call with our admissions team.</p>
+      <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap">
+        <a class="btn btn-primary" href="https://codetrainafrica.heiapply.com/application" target="_blank" rel="noopener">Enroll Now</a>
+        <a class="btn btn-outline" href="https://calendly.com/fosterfrimpong63/one-one-with-codetrain-admissions" target="_blank" rel="noopener">Book a call</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ════════ FULL STACK AI DEVELOPER ════════ -->
+<main id="page-software-engineering" class="page">
+<header class="chero"><div class="wrap chero-grid">
+  <div>
+    <span class="kicker">Flagship · Beginner-friendly · 18 months</span>
+    <h1>Full Stack AI Developer</h1>
+    <p class="lede">Graduates of this programme build and ship AI-powered software products — and compete for engineering roles at Ghanaian companies, African startups, and global employers in Germany, the UK, the US, and Canada. No prior experience required.</p>
+    <div class="hero-ctas">
+      <a class="btn btn-primary" href="https://codetrainafrica.heiapply.com/application" target="_blank" rel="noopener">Enroll now</a>
+      <a class="btn btn-outline" href="https://calendly.com/fosterfrimpong63/one-one-with-codetrain-admissions" target="_blank" rel="noopener">Let's talk</a>
+    </div>
+  </div>
+  <img src="https://codetrainafrica.com/_next/image?url=%2Fpeople%2Fsoftware.jpg&w=1920&q=75" alt="Software engineering class at Codetrain">
+</div>
+<div class="wrap facts">
+  <div class="fact"><span>Duration</span><b>18 months · 3 phases</b></div>
+  <div class="fact"><span>Delivery</span><b>In-person or online · weekday or weekend</b></div>
+  <div class="fact"><span>Tuition</span><b>GHS 38,500 · up to 50% scholarship</b></div>
+  <div class="fact"><span>Next cohort</span><b>July 2026</b></div>
+</div>
+</header>
+
+<section><div class="wrap">
+  <div class="section-head"><span class="kicker">Curriculum</span><h2>What you'll build, phase by phase</h2><p>Three milestone-gated phases. You cannot advance without passing each milestone — so what you know at the end is real.</p></div>
+  <div class="blocks">
+    <div class="block"><span class="step-n" style="background:var(--violet)">M 1–6</span><div><small>Phase 1 · Foundation</small><h3>Full-stack fundamentals</h3><p>HTML, CSS, and JavaScript fundamentals. Build your portfolio page and a JavaScript mini-app, then move into React and frontend development and a full CRUD application. AI tools are introduced from Month 3. <b>Milestone 1:</b> build and deploy a full MERN (MongoDB, Express, React, Node.js) application.</p></div></div>
+    <div class="block"><span class="step-n" style="background:var(--violet)">M 7–12</span><div><small>Phase 2 · AI Integration</small><h3>Building with AI</h3><p>TypeScript. Working with LLM APIs (Claude, OpenAI, Gemini). Building RAG (Retrieval-Augmented Generation) pipelines and AI agents. A team sprint project building a real product together. <b>Milestone 2:</b> build and deploy an AI-powered product.</p></div></div>
+    <div class="block"><span class="step-n" style="background:var(--violet)">M 13–18</span><div><small>Phase 3 · Production</small><h3>Production AI systems</h3><p>Multi-agent AI systems. Production monitoring and evaluation. System hardening. A capstone project — a real-world problem of your choosing, deployed to live users. <b>Milestone 3:</b> a production AI system with real users, evaluated by industry reviewers.</p></div></div>
+  </div>
+</div></section>
+
+<section style="background:var(--alt)"><div class="wrap">
+  <div class="section-head"><span class="kicker">Milestones</span><h2>Three milestones gate the programme</h2></div>
+  <table class="milestone-table">
+    <tr><th>Milestone</th><th>When</th><th>What is assessed</th></tr>
+    <tr><td>M1 — Full MERN App</td><td>End of Month 6</td><td>Functionality, code quality, code explanation, deployment, AI tool usage</td></tr>
+    <tr><td>M2 — AI-Powered Product</td><td>End of Month 12</td><td>AI feature quality, architecture, code explanation, production quality, team collaboration</td></tr>
+    <tr><td>M3 — Production AI System</td><td>End of Month 18</td><td>System design, AI capability, production hardening, code explanation, AI tool evidence</td></tr>
+  </table>
+</div></section>
+
+<section><div class="wrap twocol">
+  <div>
+    <span class="kicker">Outcomes</span>
+    <h2 style="font-size:1.45rem">What graduates can do</h2>
+    <ul class="checks">
+      <li>Call and manage AI APIs (Claude, OpenAI, Gemini) in production applications</li>
+      <li>Build retrieval-augmented generation (RAG) systems on real data</li>
+      <li>Build and deploy AI agents with real tool integrations</li>
+      <li>Write production-quality code in JavaScript, TypeScript, and Python</li>
+      <li>Build full-stack MERN applications and deploy them to live URLs</li>
+      <li>Work in engineering teams on real client projects</li>
+      <li>Compete for remote AI engineering roles internationally</li>
+    </ul>
+  </div>
+  <div>
+    <span class="kicker">Who it's for</span>
+    <h2 style="font-size:1.45rem">This programme is right for you if…</h2>
+    <ul class="checks">
+      <li>You're a complete beginner — no prior coding experience required</li>
+      <li>You're a university student or recent graduate who wants real, applicable skills</li>
+      <li>You're a young professional entering the software industry</li>
+      <li>You want to build products, not just use them</li>
+      <li>You want to work for international companies remotely from Ghana</li>
+    </ul>
+    <div style="margin-top:24px;display:flex;gap:12px;flex-wrap:wrap">
+      <a class="btn btn-primary" href="https://codetrainafrica.heiapply.com/application" target="_blank" rel="noopener">Enroll now</a>
+      <a class="btn btn-outline" href="https://codetrainafrica.com/scholarship" target="_blank" rel="noopener">Apply for a scholarship</a>
+    </div>
+  </div>
+</div></section>
+
+<section style="background:var(--alt);padding-top:56px;padding-bottom:56px"><div class="wrap twocol">
+  <div>
+    <span class="kicker">Admission</span>
+    <h2 style="font-size:1.45rem">What you need to get accepted</h2>
+    <ul class="checks">
+      <li>Computer literacy</li>
+      <li>Openness to learning and growth</li>
+      <li>Willingness to put in the work</li>
+      <li>Pass our intake assessment</li>
+    </ul>
+  </div>
+  <div>
+    <span class="kicker" style="background:#fff;border:1px solid var(--line)">Not required</span>
+    <h2 style="font-size:1.45rem">What you don't need</h2>
+    <ul class="checks crosses">
+      <li>A computer science certificate</li>
+      <li>Previous tech experience</li>
+      <li>Any degree</li>
+    </ul>
+  </div>
+</div></section>
+</main>
+
+<!-- ════════ PRODUCT DESIGN ════════ -->
+<main id="page-product-design" class="page">
+<header class="chero"><div class="wrap chero-grid">
+  <div>
+    <span class="kicker" style="color:var(--pink);background:#FFE5F0">Beginner-friendly · 18 months</span>
+    <h1>Product Design</h1>
+    <p class="lede">Graduates design digital products from research through to live, published applications — working in Ghana's growing tech sector, African startups, and with international clients who need African designers who understand local contexts.</p>
+    <div class="hero-ctas">
+      <a class="btn btn-primary" href="https://codetrainafrica.heiapply.com/application" target="_blank" rel="noopener">Enroll now</a>
+      <a class="btn btn-outline" href="https://calendly.com/fosterfrimpong63/one-one-with-codetrain-admissions" target="_blank" rel="noopener">Let's talk</a>
+    </div>
+  </div>
+  <img src="https://codetrainafrica.com/_next/image?url=%2Fpeople%2Fgroup2.jpg&w=1080&q=75" alt="Product design students at Codetrain">
+</div>
+<div class="wrap facts">
+  <div class="fact"><span>Duration</span><b>18 months · 4 phases</b></div>
+  <div class="fact"><span>Delivery</span><b>In-person or online · weekday or weekend</b></div>
+  <div class="fact"><span>Tuition</span><b>GHS 38,500 · up to 50% scholarship</b></div>
+  <div class="fact"><span>Next cohort</span><b>July 2026</b></div>
+</div>
+</header>
+
+<section><div class="wrap">
+  <div class="section-head"><span class="kicker" style="color:var(--pink);background:#FFE5F0">Curriculum</span><h2>What you'll build, phase by phase</h2><p>Four milestone-gated phases — fundamentals first, then AI-assisted workflows, then real, published products.</p></div>
+  <div class="blocks">
+    <div class="block"><span class="step-n" style="background:var(--pink)">M 1–3</span><div><small>Phase 1 · Design Foundations</small><h3>Fundamentals before AI</h3><p>Visual design principles. Typography, colour, layout. Research methods, wireframing, brand identity, and accessibility. No AI tools in this phase — you must understand design fundamentals first. <b>Milestone 1:</b> brand identity and app screens.</p></div></div>
+    <div class="block"><span class="step-n" style="background:var(--pink)">M 4–6</span><div><small>Phase 2 · AI-Assisted Design</small><h3>Design faster and smarter with AI</h3><p>AI tools introduced from Month 4. AI-assisted product design, component libraries, usability testing, developer handoff, and Figma mastery. <b>Milestone 2:</b> a full product design with AI workflow evidence.</p></div></div>
+    <div class="block"><span class="step-n" style="background:var(--pink)">M 7–9</span><div><small>Phase 3 · Building &amp; Publishing</small><h3>Ship real products with Framer</h3><p>Framer — a no-code design tool for building real websites and apps. Motion design, collaboration with developers, and a real client brief. <b>Milestone 3:</b> a live, published Framer product — it must work on the assessment panel's own device.</p></div></div>
+    <div class="block"><span class="step-n" style="background:var(--pink)">M 10–18</span><div><small>Phase 4 · Strategy &amp; Graduation</small><h3>Strategy, portfolio &amp; capstone</h3><p>Design strategy and international design standards. Portfolio development. Technical writing — 3 published blog posts. A capstone project on a problem you choose, with at least 5 real users. <b>Milestone 4:</b> graduation, assessed by industry reviewers.</p></div></div>
+  </div>
+</div></section>
+
+<section style="background:var(--alt)"><div class="wrap">
+  <div class="section-head"><span class="kicker" style="color:var(--pink);background:#FFE5F0">Milestones</span><h2>Four milestones gate the programme</h2></div>
+  <table class="milestone-table">
+    <tr><th>Milestone</th><th>When</th><th>The bar</th></tr>
+    <tr><td>M1 — Brand Identity + App Screens</td><td>End of Month 3</td><td>Pass threshold on design fundamentals</td></tr>
+    <tr><td>M2 — Full Product Design + AI Workflow</td><td>End of Month 6</td><td>Pass threshold, with AI workflow evidence</td></tr>
+    <tr><td>M3 — Published Framer Product</td><td>End of Month 9</td><td>The site must be live on the panel's device on assessment day</td></tr>
+    <tr><td>M4 — Graduation Capstone</td><td>End of Month 18</td><td>Minimum 5 real users — regardless of design quality</td></tr>
+  </table>
+</div></section>
+
+<section><div class="wrap twocol">
+  <div>
+    <span class="kicker" style="color:var(--pink);background:#FFE5F0">Outcomes</span>
+    <h2 style="font-size:1.45rem">What graduates can do</h2>
+    <ul class="checks">
+      <li>Design full digital products from user research through to published, live application</li>
+      <li>Use Figma professionally for UI/UX design and developer handoff</li>
+      <li>Use Framer to build and publish real websites and apps without coding</li>
+      <li>Integrate AI tools into their design workflow purposefully and critically</li>
+      <li>Present and defend design decisions to clients and stakeholders</li>
+      <li>Write and publish technical content about their design process</li>
+      <li>Work with development teams on real products</li>
+    </ul>
+  </div>
+  <div>
+    <span class="kicker" style="color:var(--pink);background:#FFE5F0">Who it's for</span>
+    <h2 style="font-size:1.45rem">This programme is right for you if…</h2>
+    <ul class="checks">
+      <li>You're a complete beginner with no design experience</li>
+      <li>You're a working professional in any field who wants to move into product design or UX</li>
+      <li>You're visual and creative and want a structured, professional pathway</li>
+      <li>You've used apps and wanted to design them instead</li>
+      <li>You work in finance, healthcare, education, admin, or communication and want to pivot into tech</li>
+    </ul>
+    <div style="margin-top:24px;display:flex;gap:12px;flex-wrap:wrap">
+      <a class="btn btn-primary" href="https://codetrainafrica.heiapply.com/application" target="_blank" rel="noopener">Enroll now</a>
+      <a class="btn btn-outline" href="https://codetrainafrica.com/scholarship" target="_blank" rel="noopener">Apply for a scholarship</a>
+    </div>
+  </div>
+</div></section>
+</main>
+
+<!-- ════════ AI PROGRAM ════════ -->
+<main id="page-ai-program" class="page">
+<header class="chero"><div class="wrap chero-grid">
+  <div>
+    <span class="kicker" style="color:var(--indigo);background:#F0E7FD">For working developers · Next cohort October 2026</span>
+    <h1>AI Program — Talent Accelerator</h1>
+    <p class="lede">A 16-week intensive that turns experienced web developers into AI engineers. If you build with JavaScript today, you'll leave shipping production AI systems — LLM-powered apps, RAG pipelines, and agents — with a deployed capstone product that has real users.</p>
+    <div class="hero-ctas">
+      <a class="btn btn-primary" href="https://codetrainafrica.heiapply.com/application" target="_blank" rel="noopener">Apply now</a>
+      <a class="btn btn-outline" href="https://calendly.com/fosterfrimpong63/one-one-with-codetrain-admissions" target="_blank" rel="noopener">Let's talk</a>
+    </div>
+  </div>
+  <img src="https://codetrainafrica.com/_next/image?url=%2Fpeople%2Fgroup3.jpg&w=1080&q=75" alt="AI Talent Accelerator students">
+</div>
+<div class="wrap facts">
+  <div class="fact"><span>Duration</span><b>16 weeks · 12-week fast track</b></div>
+  <div class="fact"><span>Format</span><b>Virtual &amp; in-person</b></div>
+  <div class="fact"><span>Fee</span><b>GHS 15,000</b></div>
+  <div class="fact"><span>Prerequisite</span><b>Working web dev experience (JS/MERN)</b></div>
+</div>
+</header>
+
+<section><div class="wrap">
+  <div class="section-head"><span class="kicker" style="color:var(--indigo);background:#F0E7FD">Curriculum</span><h2>Four blocks. Build before theory.</h2><p>You'll understand everything you ship — and ship production systems, not demos.</p></div>
+  <div class="blocks">
+    <div class="block"><span class="step-n" style="background:var(--indigo)">B1</span><div><small>Block 1</small><h3>Python for the AI ecosystem</h3><p>Move from JavaScript into the AI stack: Python, FastAPI, and the frameworks behind modern AI engineering.</p></div></div>
+    <div class="block"><span class="step-n" style="background:var(--indigo)">B2</span><div><small>Block 2</small><h3>AI engineering foundations</h3><p>LLM APIs, prompt engineering, retrieval-augmented generation (RAG), embeddings, and vector databases.</p></div></div>
+    <div class="block"><span class="step-n" style="background:var(--indigo)">B3</span><div><small>Block 3</small><h3>Agents, automation &amp; production</h3><p>Agentic and multi-agent systems, workflow automation, monitoring and evaluation, cost control, and security.</p></div></div>
+    <div class="block"><span class="step-n" style="background:var(--indigo)">B4</span><div><small>Block 4</small><h3>Capstone &amp; career readiness</h3><p>Ship a deployed AI product with real users, publish your work, and defend it before a panel — proof employers can see.</p></div></div>
+  </div>
+</div></section>
+
+<section style="background:var(--alt)"><div class="wrap twocol">
+  <div>
+    <span class="kicker" style="color:var(--indigo);background:#F0E7FD">Tools you'll work with</span>
+    <h2 style="font-size:1.45rem">The modern AI engineering stack</h2>
+    <ul class="checks">
+      <li>Claude, OpenAI &amp; Gemini APIs</li>
+      <li>LangChain &amp; LangGraph</li>
+      <li>Vector databases (Pinecone, pgvector)</li>
+      <li>Automation platforms (n8n, Make)</li>
+      <li>Monitoring &amp; evals (LangSmith, Helicone)</li>
+      <li>AI coding tools (Claude Code, Cursor, Copilot)</li>
+    </ul>
+  </div>
+  <div>
+    <span class="kicker" style="color:var(--indigo);background:#F0E7FD">Is this for you?</span>
+    <h2 style="font-size:1.45rem">Built for developers, not beginners</h2>
+    <ul class="checks">
+      <li>You build web apps professionally (JavaScript/MERN or similar)</li>
+      <li>No Python or AI experience required — we bridge you in</li>
+      <li>You want to compete for AI engineering roles globally</li>
+      <li>Strong candidates can fast-track to 12 weeks by assessment</li>
+    </ul>
+    <div style="margin-top:22px"><a class="btn btn-primary" href="https://codetrainafrica.heiapply.com/application" target="_blank" rel="noopener">Apply now</a></div>
+  </div>
+</div></section>
+</main>
+
+<!-- ════════ AI ADVANTAGE ════════ -->
+<main id="page-ai-advantage" class="page">
+<header class="chero"><div class="wrap chero-grid">
+  <div>
+    <span class="kicker" style="color:#1E7E96;background:#E3F7FC">Executive cohorts · No coding required · Next cohort October 2026</span>
+    <h1>The AI Advantage Programme</h1>
+    <p class="lede">Three Saturdays that change how you work. Learn a practical, repeatable method for getting real results from AI, build your own working AI assistant from your actual work — and prove it at a public Demo Day. For working professionals in finance, HR, education, sales, NGOs, and administration.</p>
+    <div class="hero-ctas">
+      <a class="btn btn-primary" href="https://codetrainafrica.heiapply.com/application" target="_blank" rel="noopener">Apply for a cohort</a>
+      <a class="btn btn-outline" href="https://calendly.com/fosterfrimpong63/one-one-with-codetrain-admissions" target="_blank" rel="noopener">Enquire for your team</a>
+    </div>
+  </div>
+  <img src="https://codetrainafrica.com/_next/image?url=%2Fpeople%2Fexpe2.jpg&w=828&q=75" alt="Professionals learning AI at Codetrain">
+</div>
+<div class="wrap facts">
+  <div class="fact"><span>Format</span><b>3 Saturdays + 2 application weeks</b></div>
+  <div class="fact"><span>Cohort size</span><b>Capped at 25 · by application</b></div>
+  <div class="fact"><span>Fee</span><b>GHS 2,800 · paid at enrolment</b></div>
+  <div class="fact"><span>Certification</span><b>Present a working assistant at Demo Day</b></div>
+</div>
+</header>
+
+<section><div class="wrap">
+  <div class="section-head"><span class="kicker" style="color:#1E7E96;background:#E3F7FC">The journey</span><h2>Learn. Build. Prove.</h2></div>
+  <div class="blocks">
+    <div class="block"><span class="step-n" style="background:var(--lblue)">S1</span><div><small>Saturday 1 · Learn</small><h3>The briefing method &amp; AI workflows</h3><p>Master a five-part briefing framework for directing AI — then apply it to real tasks from your own profession, with exercise banks for finance, HR, education, sales &amp; marketing, NGOs, and administration.</p></div></div>
+    <div class="block"><span class="step-n" style="background:#8FDDEF">W1</span><div><small>Application week</small><h3>Put it to work</h3><p>Structured exercises in your real job between sessions — because the skill only counts if it survives Monday morning.</p></div></div>
+    <div class="block"><span class="step-n" style="background:var(--lblue)">S2</span><div><small>Saturday 2 · Build</small><h3>Build your work assistant</h3><p>Build a working AI assistant from a template, tailored to your role — with guest practitioners sharing how they use AI at work, and training in judgment: knowing when to trust AI and when not to.</p></div></div>
+    <div class="block"><span class="step-n" style="background:#8FDDEF">W2</span><div><small>Application week</small><h3>Refine and rehearse</h3><p>Sharpen your assistant on real tasks and prepare your Demo Day presentation.</p></div></div>
+    <div class="block"><span class="step-n" style="background:var(--lblue)">S3</span><div><small>Saturday 3 · Prove</small><h3>Demo Day &amp; certification</h3><p>Present your working assistant at a public Demo Day. Certification is earned by demonstrating a working tool — not by attendance. Embossed certificates presented on stage, with managers invited.</p></div></div>
+  </div>
+</div></section>
+
+<section style="background:var(--alt)"><div class="wrap twocol">
+  <div>
+    <span class="kicker" style="color:#1E7E96;background:#E3F7FC">For organisations</span>
+    <h2 style="font-size:1.45rem">Run a cohort for your team</h2>
+    <p style="margin-top:10px">Dedicated organisational cohorts, customised to your sector, invoiced directly to your organisation. A one-day intensive format is available for corporate teams. Minimum 10 participants.</p>
+    <div style="margin-top:20px"><a class="btn btn-primary" href="https://calendly.com/fosterfrimpong63/one-one-with-codetrain-admissions" target="_blank" rel="noopener">Book a corporate enquiry call</a></div>
+  </div>
+  <div>
+    <span class="kicker" style="color:#1E7E96;background:#E3F7FC">Not ready yet?</span>
+    <h2 style="font-size:1.45rem">Join the free AI &amp; Work session</h2>
+    <p style="margin-top:10px">A free monthly online discussion on how professionals are actually using AI at work. Come with questions, leave with ideas — and see if the full programme is right for you.</p>
+    <div style="margin-top:20px"><a class="btn btn-outline" href="https://tally.so/r/wodqVO" target="_blank" rel="noopener">Register interest</a></div>
+  </div>
+</div></section>
+</main>
+
+<!-- ════════ CODETRAIN SOLARA (KIDS) ════════ -->
+<main id="page-kids" class="page">
+<header class="chero"><div class="wrap chero-grid">
+  <div>
+    <span class="kicker" style="color:#9A7100;background:#FFF3D1">Ages 8–14 · Online school · Rolling admissions</span>
+    <h1>Codetrain Solara — Coding for Kids</h1>
+    <p class="lede">Unlock your child's potential with Africa's premier online school for future innovators. Through hands-on, project-based learning that combines coding, AI, creativity, and leadership, Solara transforms kids into world-class innovators, leaders, and entrepreneurs.</p>
+    <div class="hero-ctas">
+      <a class="btn btn-primary" href="https://codetrainafrica.heiapply.com/application" target="_blank" rel="noopener">Enroll now</a>
+      <a class="btn btn-outline" href="https://calendly.com/fosterfrimpong63/one-one-with-codetrain-admissions" target="_blank" rel="noopener">Let's talk</a>
+    </div>
+  </div>
+  <img src="https://codetrainafrica.com/_next/image?url=%2Fpeople%2Fexp7.jpg&w=828&q=75" alt="Young innovators at Codetrain Solara">
+</div>
+<div class="wrap facts">
+  <div class="fact"><span>Ages</span><b>8–14</b></div>
+  <div class="fact"><span>Schedule</span><b>Online Saturday classes · 12noon–3pm GMT</b></div>
+  <div class="fact"><span>Duration</span><b>3–5 years · annual subscription</b></div>
+  <div class="fact"><span>Admissions</span><b>Rolling — enrol anytime · GHS 10,000/year</b></div>
+</div>
+</header>
+
+<section><div class="wrap">
+  <div class="section-head"><span class="kicker" style="color:#9A7100;background:#FFF3D1">Your child's journey</span><h2>What your child will grow into</h2><p>Kids as young as 10–14 at Codetrain have built an NFC-powered mobile wallet, a COVID-19 data tracker, a communicable diseases app, and their own games — and mentored peers and spoken at international innovation challenges.</p></div>
+  <div class="exp-grid" style="grid-template-columns:repeat(2,1fr)">
+    <div class="exp"><div class="ic" style="background:#FFF3D1">💻</div><h3>Excel in technology &amp; innovation</h3><p>Master the fundamentals of coding, AI, and app development — positioning them to lead advancements in cutting-edge technologies.</p></div>
+    <div class="exp"><div class="ic" style="background:#FFF3D1">🚀</div><h3>Shape industries &amp; launch startups</h3><p>Gain entrepreneurial skills to create transformative solutions and drive innovation within global markets.</p></div>
+    <div class="exp"><div class="ic" style="background:#FFF3D1">🎤</div><h3>Inspire &amp; mentor others</h3><p>Build communication and leadership skills — from mentoring peers to speaking on global stages.</p></div>
+    <div class="exp"><div class="ic" style="background:#FFF3D1">🌍</div><h3>Pursue global tech opportunities</h3><p>Prepare to thrive as a tech leader working on international teams and solving pressing global challenges.</p></div>
+  </div>
+</div></section>
+
+<section style="background:var(--alt)"><div class="wrap twocol">
+  <div>
+    <span class="kicker" style="color:#9A7100;background:#FFF3D1">Programme structure</span>
+    <h2 style="font-size:1.45rem">How Solara works</h2>
+    <ul class="checks">
+      <li>Online Saturday classes, 12noon–3pm GMT</li>
+      <li>In-person Summer Bootcamp</li>
+      <li>Annual Innovation Conference</li>
+      <li>Hands-on, project-based learning with real projects</li>
+    </ul>
+    <p style="margin-top:16px;font-size:.9rem">Part-scholarships are awarded to children who submit compelling applications and demonstrate eligibility based on financial need, gender inclusion, neurodivergence, or living with a disability.</p>
+    <div style="margin-top:20px;display:flex;gap:12px;flex-wrap:wrap">
+      <a class="btn btn-primary" href="https://codetrainafrica.heiapply.com/application" target="_blank" rel="noopener">Enroll now</a>
+      <a class="btn btn-outline" href="https://codetrainafrica.com/scholarship" target="_blank" rel="noopener">Apply for a part-scholarship</a>
+    </div>
+  </div>
+  <div>
+    <span class="kicker" style="color:#9A7100;background:#FFF3D1">Proof it works</span>
+    <h2 style="font-size:1.45rem">Jermaine's journey</h2>
+    <p style="margin-top:10px">At just 8 years old, Jermaine's parents recognised his passion for technology and enrolled him at Codetrain. By 11, he had developed a COVID-19 statistics app. He mastered full-stack web development — JavaScript, React, and MongoDB — alongside teamwork, public speaking, and technical communication. Today he advises two companies and mentors at Moonshot Pirates in Austria.</p>
+  </div>
+</div></section>
+</main>
+
+<!-- ════════ HIRE ════════ -->
+<main id="page-hire" class="page">
+<header class="chero"><div class="wrap chero-grid">
+  <div>
+    <span class="kicker">For employers</span>
+    <h1>Hire graduates who can ship from day one</h1>
+    <p class="lede">Codetrain graduates are trained on real projects with modern AI tooling, vetted through milestone assessments, and proven at Demo Day. Tell us the role — we'll match you with job-ready AI developers and product designers at no cost to you.</p>
+    <div class="hero-ctas">
+      <a class="btn btn-primary" href="https://calendly.com/fosterfrimpong63/one-one-with-codetrain-admissions" target="_blank" rel="noopener">Request talent</a>
+      <a class="btn btn-outline" href="mailto:admissions@codetrainafrica.com">Email us</a>
+    </div>
+  </div>
+  <img src="https://codetrainafrica.com/_next/image?url=%2Fpeople%2Fgroup1.jpg&w=1080&q=75" alt="Codetrain graduates">
+</div></header>
+<section><div class="wrap">
+  <div class="blocks">
+    <div class="block"><span class="step-n" style="background:var(--violet)">1</span><div><h3>Tell us what you need</h3><p>Role, stack, seniority, remote or on-site. A short call is all it takes.</p></div></div>
+    <div class="block"><span class="step-n" style="background:var(--violet)">2</span><div><h3>Meet matched candidates</h3><p>We shortlist graduates whose training and portfolios fit your requirements.</p></div></div>
+    <div class="block"><span class="step-n" style="background:var(--violet)">3</span><div><h3>Hire — or attend Demo Day</h3><p>Interview and hire directly, or join our next Demo Day &amp; Career Fair and meet an entire graduating cohort.</p></div></div>
+  </div>
+</div></section>
+</main>
+
+<footer id="contact">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <span class="foot-logo"><img src="https://codetrainafrica.com/_next/image?url=%2Fcodetrain-logo.png&w=256&q=75" alt="Codetrain Africa"></span>
+        <p style="color:#B9B3D6;font-size:.88rem">Ghana's leading AI and software engineering training institution. In-person at East Legon, Accra — and live online, wherever you are.</p>
+      </div>
+      <div>
+        <h4>Courses</h4>
+        <a href="#/software-engineering">Full Stack AI Developer</a>
+        <a href="#/product-design">Product Design</a>
+        <a href="#/ai-program">AI Program — Talent Accelerator</a>
+        <a href="#/ai-advantage">AI Advantage Programme</a>
+        <a href="#/kids">Codetrain Solara (Kids)</a>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <a href="#/hire">Hire a graduate</a>
+        <a href="https://codetrainafrica.com/success-stories" target="_blank" rel="noopener">Success stories</a>
+        <a href="https://codetrainafrica.com/partnerships" target="_blank" rel="noopener">Partnerships</a>
+        <a href="https://codetrain.medium.com/" target="_blank" rel="noopener">Blog</a>
+        <a href="https://codetrainafrica.com/donate" target="_blank" rel="noopener">Donate</a>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <a href="tel:+233545792397">📞 +233 545 792 397</a>
+        <a href="mailto:admissions@codetrainafrica.com">✉️ admissions@codetrainafrica.com</a>
+        <a>📍 16a Parsnip Street, East Legon, Accra (near A&amp;C Mall)</a>
+        <div style="margin-top:14px">
+          <a style="display:inline;margin-right:12px" href="https://www.linkedin.com/school/codetrain/" target="_blank" rel="noopener">LinkedIn</a>
+          <a style="display:inline;margin-right:12px" href="https://www.instagram.com/codetrainafrica/" target="_blank" rel="noopener">Instagram</a>
+          <a style="display:inline;margin-right:12px" href="https://www.facebook.com/codetraingh/" target="_blank" rel="noopener">Facebook</a>
+          <a style="display:inline" href="https://x.com/codetraingh" target="_blank" rel="noopener">X</a>
+        </div>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 Codetrain — All Rights Reserved</span>
+      <span>Made in Accra 🇬🇭</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+const routes={'':'home','/':'home','/software-engineering':'software-engineering','/product-design':'product-design','/ai-program':'ai-program','/ai-advantage':'ai-advantage','/kids':'kids','/hire':'hire'};
+function render(){
+  let h=location.hash.replace('#','');
+  let anchor=null;
+  if(h.startsWith('/#')){anchor=h.slice(2);h='/';}
+  const page=routes[h]||'home';
+  document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
+  document.getElementById('page-'+page).classList.add('active');
+  document.querySelector('.nav-links').classList.remove('open');
+  if(anchor){const el=document.getElementById(anchor);if(el){el.scrollIntoView();return;}}
+  window.scrollTo(0,0);
+}
+window.addEventListener('hashchange',render);
+render();
+</script>
+</body>
+</html>
