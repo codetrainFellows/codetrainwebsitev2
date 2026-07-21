@@ -32,11 +32,11 @@ export default function AiAdvantage() {
               </a>
               <a
                 className="btn btn-outline"
-                href="https://calendly.com/fosterfrimpong63/one-one-with-codetrain-admissions"
+                href="https://wa.me/233545792397"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Enquire for your team
+                WhatsApp Us
               </a>
             </div>
           </div>
@@ -156,11 +156,11 @@ export default function AiAdvantage() {
             <div style={{ marginTop: "20px" }}>
               <a
                 className="btn btn-primary"
-                href="https://calendly.com/fosterfrimpong63/one-one-with-codetrain-admissions"
+                href="https://wa.me/233545792397"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Book a corporate enquiry call
+                WhatsApp Us
               </a>
             </div>
           </div>

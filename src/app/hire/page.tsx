@@ -22,11 +22,11 @@ export default function Hire() {
             <div className="hero-ctas">
               <a
                 className="btn btn-primary"
-                href="https://calendly.com/fosterfrimpong63/one-one-with-codetrain-admissions"
+                href="https://wa.me/233545792397"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Request talent
+                WhatsApp Us
               </a>
               <a className="btn btn-outline" href="mailto:admissions@codetrainafrica.com">
                 Email us

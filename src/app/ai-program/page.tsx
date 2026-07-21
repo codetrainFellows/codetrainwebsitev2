@@ -32,11 +32,11 @@ export default function AiProgram() {
               </a>
               <a
                 className="btn btn-outline"
-                href="https://calendly.com/fosterfrimpong63/one-one-with-codetrain-admissions"
+                href="https://wa.me/233545792397"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Let's talk
+                WhatsApp Us
               </a>
             </div>
           </div>
