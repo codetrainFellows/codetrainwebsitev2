@@ -33,14 +33,8 @@ export default function Footer() {
             <a href="https://codetrainafrica.com/success-stories" target="_blank" rel="noopener noreferrer">
               Success stories
             </a>
-            <a href="https://codetrainafrica.com/partnerships" target="_blank" rel="noopener noreferrer">
-              Partnerships
-            </a>
             <a href="https://codetrain.medium.com/" target="_blank" rel="noopener noreferrer">
               Blog
-            </a>
-            <a href="https://codetrainafrica.com/donate" target="_blank" rel="noopener noreferrer">
-              Donate
             </a>
           </div>
           <div>

@@ -91,22 +91,7 @@ export default function Navbar() {
           <Link href="/hire" onClick={closeMenu}>
             Hire a Grad
           </Link>
-          <a
-            href="https://codetrainafrica.com/partnerships"
-            target="_blank"
-            rel="noopener noreferrer"
-            onClick={closeMenu}
-          >
-            Partnerships
-          </a>
-          <a
-            href="https://codetrainafrica.com/donate"
-            target="_blank"
-            rel="noopener noreferrer"
-            onClick={closeMenu}
-          >
-            Donate
-          </a>
+
           <a
             className="btn btn-primary btn-sm"
             href="https://codetrainafrica.heiapply.com/application"
