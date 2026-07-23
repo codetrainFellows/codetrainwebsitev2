@@ -25,7 +25,7 @@ export default function Navbar() {
             alt="Codetrain Africa"
           />
         </Link>
-        
+
         <button
           className="hamburger"
           aria-label="Menu"
@@ -39,7 +39,7 @@ export default function Navbar() {
           <Link href="/#about" onClick={closeMenu}>
             About Us
           </Link>
-          
+
           <div className="dropdown">
             <button aria-haspopup="true" style={{ display: "flex", alignItems: "center", gap: "4px" }}>
               Courses <ChevronDown size={14} />
@@ -77,12 +77,12 @@ export default function Navbar() {
                 <span className="tag-dot" style={{ background: "var(--yellow)" }}></span>
                 <span>
                   Codetrain Solara (Kids)
-                  <small>Ages 8–14 · online Saturdays</small>
+                  <small>Ages 8–16 · online Saturdays</small>
                 </span>
               </Link>
             </div>
           </div>
-          
+
           <Link href="/#stories" onClick={closeMenu}>
             Success Stories
           </Link>

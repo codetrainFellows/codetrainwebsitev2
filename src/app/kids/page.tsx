@@ -4,7 +4,7 @@ import { Monitor, Rocket, Mic, Globe } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Codetrain Solara (Kids Coding) | Codetrain Africa",
-  description: "Africa's premier online school for coding, AI, and leadership for kids aged 8–14. Hands-on, project-based learning, Saturday classes, and innovation bootcamp.",
+  description: "Africa's premier online school for coding, AI, and leadership for kids aged 8–16. Hands-on, project-based learning, Saturday classes, and innovation bootcamp.",
 };
 
 export default function Kids() {
@@ -14,7 +14,7 @@ export default function Kids() {
         <div className="wrap chero-grid">
           <div>
             <span className="kicker" style={{ color: "#9A7100", background: "#FFF3D1" }}>
-              Ages 8–14 · Online school · Rolling admissions
+              Ages 8–16 · Online school · Rolling admissions
             </span>
             <h1>Codetrain Solara — Coding for Kids</h1>
             <p className="lede">
@@ -50,7 +50,7 @@ export default function Kids() {
         <div className="wrap facts">
           <div className="fact">
             <span>Ages</span>
-            <b>8–14</b>
+            <b>8–16</b>
           </div>
           <div className="fact">
             <span>Schedule</span>

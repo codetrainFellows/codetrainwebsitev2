@@ -262,7 +262,7 @@ export default function Home() {
               <div className="course-top" style={{ background: "var(--yellow)" }}></div>
               <div className="course-body">
                 <div className="course-tags">
-                  <span className="tag">Ages 8–14</span>
+                  <span className="tag">Ages 8–16</span>
                   <span className="tag">Online Saturdays · 12noon–3pm GMT</span>
                   <span className="tag">Enrol anytime</span>
                 </div>
@@ -577,7 +577,7 @@ export default function Home() {
               <div className="mini-fee">
                 <span className="p">GHS 10,000/yr</span>
                 <b>Codetrain Solara (Kids)</b>
-                <span>Ages 8–14 · rolling admissions</span>
+                <span>Ages 8–16 · rolling admissions</span>
               </div>
             </div>
           </div>
