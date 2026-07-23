@@ -60,6 +60,9 @@ export const metadata: Metadata = {
       "Learn fullstack web and mobile apps development from the most holistic coding bootcamp.",
     images: ["https://www.codetrainafrica.com/people/new1.jpg"],
   },
+  icons: {
+    icon: "/logo-icon-b.png",
+  },
 };
 
 export default function RootLayout({
