@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Codetrain University Fellows — A one-year engineering fellowship for university students</title>
+<meta name="description" content="A selective one-year software engineering fellowship built around the university calendar. 30 Fellows. Two residencies (Accra, in-person or online), one Demo Day. Graduate with more than a degree.">
+<style>
+:root{
+  --violet:#1B1049; --violet-dark:#120B33; --violet-soft:#EDEAF7;
+  --yellow:#FFBE0C; --yellow-dark:#E8AC00; --pink:#FF006E;
+  --ink:#1B1049; --sub:rgba(27,16,73,.64); --line:#E7E4F0; --paper:#FFFFFF; --alt:#F8F7FC;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Helvetica Neue',Helvetica,Arial,system-ui,sans-serif;color:var(--ink);background:var(--paper);line-height:1.65;font-size:17px;-webkit-font-smoothing:antialiased}
+h1,h2,h3{line-height:1.08;letter-spacing:-.025em;color:var(--violet)}
+h1{font-size:clamp(2.6rem,6.5vw,4.6rem);font-weight:700}
+h2{font-size:clamp(1.9rem,4vw,2.9rem);font-weight:700}
+h3{font-size:1.15rem;font-weight:700;letter-spacing:-.01em}
+p{color:var(--sub)}
+a{text-decoration:none;color:inherit}
+.wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+.narrow{max-width:720px;margin:0 auto}
+section{padding:110px 0}
+.k{display:inline-block;font-size:.72rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--pink);margin-bottom:18px}
+.dark .k{color:var(--yellow)}
+.btn{display:inline-block;padding:16px 34px;border-radius:999px;font-weight:700;font-size:1rem;transition:.18s;cursor:pointer}
+.btn-y{background:var(--yellow);color:var(--violet)}
+.btn-y:hover{background:var(--yellow-dark);transform:translateY(-1px)}
+.btn-o{border:1.5px solid var(--violet);color:var(--violet)}
+.btn-o:hover{background:var(--violet);color:#fff}
+.dark .btn-o{border-color:rgba(255,255,255,.5);color:#fff}
+.dark .btn-o:hover{background:#fff;color:var(--violet)}
+
+/* nav */
+nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;height:66px}
+.logo{height:36px;display:block}
+nav .btn{padding:10px 22px;font-size:.9rem}
+
+/* dark sections */
+.dark{background:var(--violet);color:#fff}
+.dark h1,.dark h2,.dark h3{color:#fff}
+.dark p{color:rgba(255,255,255,.72)}
+
+/* hero */
+.hero{padding:130px 0 120px;position:relative;overflow:hidden}
+.hero::after{content:'';position:absolute;bottom:-260px;right:-260px;width:640px;height:640px;border-radius:50%;background:radial-gradient(circle,rgba(255,190,12,.16),transparent 65%);pointer-events:none}
+.hero .wrap{position:relative;z-index:1}
+.hero p.lede{font-size:1.25rem;max-width:560px;margin:26px 0 40px;color:rgba(255,255,255,.78)}
+.hero-ctas{display:flex;gap:16px;flex-wrap:wrap;align-items:center}
+.hero-meta{display:flex;gap:40px;margin-top:64px;flex-wrap:wrap}
+.hm b{display:block;font-size:1.6rem;font-weight:700;letter-spacing:-.02em}
+.hm span{font-size:.85rem;color:rgba(255,255,255,.6)}
+
+/* statement */
+.statement p{font-size:clamp(1.3rem,2.6vw,1.7rem);line-height:1.5;color:var(--violet);font-weight:500;letter-spacing:-.01em}
+.statement p b{color:var(--pink)}
+
+/* year timeline */
+.chapters{display:grid;gap:2px;border-radius:20px;overflow:hidden;margin-top:56px}
+.chapter{background:var(--alt);padding:44px 40px;display:grid;grid-template-columns:170px 1fr;gap:36px;align-items:start}
+.chapter .num{font-size:.75rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--pink)}
+.chapter .num b{display:block;font-size:1.5rem;letter-spacing:-.02em;color:var(--violet);text-transform:none;margin-top:6px;line-height:1.2}
+.chapter h3{font-size:1.35rem;margin-bottom:10px}
+.chapter p{font-size:1rem}
+.chapter .tagline{display:inline-block;margin-top:14px;font-size:.8rem;font-weight:700;color:var(--violet);background:#fff;border:1px solid var(--line);padding:6px 14px;border-radius:999px}
+.chapter.gold{background:var(--violet);}
+.chapter.gold h3,.chapter.gold .num b{color:#fff}
+.chapter.gold .num{color:var(--yellow)}
+.chapter.gold p{color:rgba(255,255,255,.72)}
+.chapter.gold .tagline{background:var(--yellow);border:none;color:var(--violet)}
+
+/* learn grid */
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:56px}
+.cell{border:1px solid var(--line);border-radius:18px;padding:32px 28px;background:#fff}
+.cell .dot{width:12px;height:12px;border-radius:50%;background:var(--yellow);margin-bottom:20px}
+.cell h3{margin-bottom:8px;font-size:1.05rem}
+.cell p{font-size:.94rem}
+
+/* calendar fit */
+.fit{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.fit ul{list-style:none;display:grid;gap:16px;margin-top:28px}
+.fit li{padding-left:34px;position:relative;font-size:1.02rem;color:var(--ink)}
+.fit li::before{content:'';position:absolute;left:0;top:7px;width:18px;height:18px;border-radius:50%;background:var(--yellow)}
+.fit li span{display:block;font-size:.88rem;color:var(--sub);font-weight:400}
+.calendar{background:var(--alt);border:1px solid var(--line);border-radius:20px;padding:36px}
+.cal-row{display:grid;grid-template-columns:92px 1fr;gap:16px;align-items:center;padding:13px 0;border-bottom:1px solid var(--line)}
+.cal-row:last-child{border-bottom:none}
+.cal-row .m{font-size:.78rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--sub)}
+.cal-bar{height:34px;border-radius:8px;display:flex;align-items:center;padding:0 16px;font-size:.82rem;font-weight:700;color:#fff}
+.cal-bar.full{background:var(--violet)}
+.cal-bar.light{background:#B7AEE0;color:var(--violet);width:52%}
+.cal-bar.sprint{background:var(--pink)}
+
+/* selection */
+.sel{display:grid;grid-template-columns:1fr 1fr;gap:64px}
+.sel ul{list-style:none;display:grid;gap:12px;margin-top:22px}
+.sel li{padding-left:30px;position:relative;font-size:1rem;color:var(--ink)}
+.sel li::before{content:'✓';position:absolute;left:0;top:2px;width:20px;height:20px;border-radius:50%;background:var(--violet-soft);color:var(--violet);font-weight:700;font-size:.72rem;display:grid;place-items:center}
+.dark .sel li{color:#fff}
+.dark .sel li::before{background:rgba(255,255,255,.12);color:var(--yellow)}
+
+/* details strip */
+.details{display:grid;grid-template-columns:repeat(4,1fr);gap:2px;border-radius:20px;overflow:hidden;margin-top:56px}
+.dcell{background:rgba(255,255,255,.06);padding:34px 28px}
+.dcell span{font-size:.72rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--yellow);display:block;margin-bottom:10px}
+.dcell b{font-size:1.25rem;font-weight:700;letter-spacing:-.01em;display:block;line-height:1.3}
+.dcell p{font-size:.85rem;margin-top:6px}
+
+/* after */
+.after{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:56px}
+
+/* media placeholder */
+.ph{border:2px dashed #B7AEE0;background:var(--violet-soft);border-radius:20px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;text-align:center;padding:24px;color:var(--violet);aspect-ratio:16/9}
+.ph .ic{width:56px;height:56px;border-radius:50%;background:var(--yellow);color:var(--violet);display:grid;place-items:center;font-size:1.3rem}
+.ph b{font-size:.95rem}
+.ph span{font-size:.82rem;color:var(--sub);max-width:420px;line-height:1.5}
+.ph .tag{font-size:.66rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--pink)}
+
+/* faq */
+details{border-bottom:1px solid var(--line);padding:22px 0}
+summary{cursor:pointer;font-weight:700;font-size:1.05rem;list-style:none;display:flex;justify-content:space-between;gap:16px;color:var(--violet)}
+summary::-webkit-details-marker{display:none}
+summary::after{content:'+';color:var(--pink);font-weight:700;font-size:1.3rem;flex-shrink:0}
+details[open] summary::after{content:'−'}
+details p{margin-top:12px;font-size:.98rem;max-width:640px}
+
+/* final cta */
+.final{text-align:center;padding:130px 0}
+.final p{max-width:520px;margin:20px auto 42px;font-size:1.1rem}
+.final .small{font-size:.85rem;margin-top:26px;color:rgba(255,255,255,.5)}
+
+footer{background:var(--violet-dark);color:rgba(255,255,255,.55);padding:36px 0;font-size:.85rem}
+.foot{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
+.foot a:hover{color:#fff}
+
+@media(max-width:880px){
+  section{padding:80px 0}
+  .hero{padding:90px 0}
+  .chapter{grid-template-columns:1fr;gap:14px;padding:34px 26px}
+  .grid3,.after,.fit,.sel{grid-template-columns:1fr}
+  .details{grid-template-columns:1fr 1fr}
+  .fit{gap:40px}
+}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap nav-inner">
+    <a href="https://codetrainafrica.com" target="_blank" rel="noopener"><img class="logo" src="https://codetrainafrica.com/_next/image?url=%2Fcodetrain-logo.png&w=256&q=75" alt="Codetrain"></a>
+    <div style="display:flex;gap:22px;align-items:center">
+      <a href="#year" style="font-size:.9rem;font-weight:500">The Year</a>
+      <a href="#details" style="font-size:.9rem;font-weight:500">Details</a>
+      <a class="btn btn-y" href="https://codetrainafrica.heiapply.com/application" target="_blank" rel="noopener">Apply</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero dark">
+  <div class="wrap">
+    <span class="k">Codetrain University Fellows · Class of 2027</span>
+    <h1>Graduate with more<br>than a degree.</h1>
+    <p class="lede">A selective one-year software engineering fellowship, built around the university calendar. Thirty Fellows. Two residencies — in Accra or online. One Demo Day in front of employers.</p>
+    <div class="hero-ctas">
+      <a class="btn btn-y" href="https://codetrainafrica.heiapply.com/application" target="_blank" rel="noopener">Apply for a fellowship</a>
+      <a class="btn btn-o" href="#year">See the year →</a>
+    </div>
+    <div class="hero-meta">
+      <div class="hm"><b>30</b><span>Fellows per cohort</span></div>
+      <div class="hm"><b>1 year</b><span>September to May</span></div>
+      <div class="hm"><b>GHS 12,000</b><span>flexible payment plans</span></div>
+      <div class="hm"><b>Accra</b><span>East Legon campus</span></div>
+    </div>
+  </div>
+</header>
+
+<section class="statement">
+  <div class="wrap narrow">
+    <span class="k">Why this exists</span>
+    <p>Every year, thousands of students graduate with the same certificate. Employers can't tell them apart — so they hire the ones who can <b>build</b>. The Fellowship exists to make you one of them: a university student who ships real software, presents real work, and walks into interviews with proof instead of promises.</p>
+  </div>
+</section>
+
+<section id="year" style="background:var(--alt);border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+  <div class="wrap">
+    <span class="k">The Year</span>
+    <h2>One year. Three chapters.</h2>
+    <p style="margin-top:14px;max-width:560px">The Fellowship is engineered around your academic life — intensive when university is out, light when lectures are on.</p>
+    <div class="chapters">
+      <div class="chapter" style="background:#fff">
+        <div class="num">Chapter 1 · Sep – Dec<b>Engineering Residency I</b></div>
+        <div>
+          <h3>Learn to build like an engineer</h3>
+          <p>Four days a week, in Accra or online, during the long vacation. Fellows train intensively in modern software engineering — writing real code, working with AI-assisted development tools — then put it to work on a real problem: each Fellow takes on an actual challenge facing a business or community in Ghana, builds a working solution, and demos it live to close out the residency. With a named mentor and a completion letter documenting your hours, the residency covers your internship or industrial attachment requirement.</p>
+          <span class="tagline">4 days/week · Accra or online</span>
+          <span class="tagline" style="margin-left:8px">Covers your internship requirement</span>
+        </div>
+      </div>
+      <div class="chapter" style="background:#fff">
+        <div class="num">Chapter 2 · Jan – Apr<b>Engineering Practice</b></div>
+        <div>
+          <h3>Keep building through the semester</h3>
+          <p>When lectures resume, the Fellowship flexes. A structured practice track of 3–5 hours a week keeps your skills compounding — guided projects, code reviews, and mentorship that fit around your course load, not against it.</p>
+          <span class="tagline">3–5 hrs/week · alongside university</span>
+        </div>
+      </div>
+      <div class="chapter gold">
+        <div class="num">Chapter 3 · May<b>Engineering Residency II</b></div>
+        <div>
+          <h3>The four-week sprint — and Demo Day</h3>
+          <p>Back in Accra or online for an intensive four-week build sprint. Fellows take a product from idea to deployed, then present it at Demo Day — in front of the Codetrain community, industry engineers, and hiring companies.</p>
+          <span class="tagline">4-week sprint · Demo Day finale</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <span class="k">What Fellows gain</span>
+    <h2>What a year makes.</h2>
+    <div class="grid3">
+      <div class="cell"><div class="dot"></div><h3>Real engineering skill</h3><p>Modern full-stack development and AI-assisted engineering — learned by building, not by watching slides.</p></div>
+      <div class="cell"><div class="dot"></div><h3>A shipped portfolio</h3><p>Deployed projects with live URLs — including a real problem solved for a business or community in Ghana, demoed live and documented like an internship.</p></div>
+      <div class="cell"><div class="dot"></div><h3>Demo Day exposure</h3><p>Present your work to engineers and employers. Codetrain graduates have been hired on the spot at Demo Day.</p></div>
+      <div class="cell"><div class="dot"></div><h3>A selective peer group</h3><p>Thirty Fellows chosen competitively — the ambitious students from across universities who push each other.</p></div>
+      <div class="cell"><div class="dot"></div><h3>Mentorship that continues</h3><p>Teaching fellows and industry mentors through both residencies and the semester in between.</p></div>
+      <div class="cell"><div class="dot"></div><h3>A pathway forward</h3><p>Top Fellows may earn advanced standing into Codetrain's flagship programme, or consideration for the AI Program.</p></div>
+    </div>
+  </div>
+</section>
+
+<section style="background:var(--alt);border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+  <div class="wrap fit">
+    <div>
+      <span class="k">Built for students</span>
+      <h2>Your degree stays first. Your skills don't wait.</h2>
+      <ul>
+        <li>Residencies run during vacation<span>The intensive months happen when campus is closed — no clash with lectures or exams.</span></li>
+        <li>Join in Accra or online<span>Outside Accra? Join both residencies live online — same mentors, same project, same Demo Day.</span></li>
+        <li>Semester load: 3–5 hours a week<span>Lighter than one extra course — designed to survive a real academic timetable.</span></li>
+        <li>Finish before finals<span>The May sprint and Demo Day wrap before the academic year's heaviest period.</span></li>
+      </ul>
+    </div>
+    <div class="calendar" aria-label="Fellowship calendar">
+      <div class="cal-row"><span class="m">Sep–Dec</span><div class="cal-bar full">Residency I — 4 days/week</div></div>
+      <div class="cal-row"><span class="m">Jan–Apr</span><div class="cal-bar light">Practice — 3–5 hrs/week</div></div>
+      <div class="cal-row"><span class="m">May</span><div class="cal-bar sprint">Residency II — sprint + Demo Day</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="dark" id="selection">
+  <div class="wrap sel">
+    <div>
+      <span class="k">Selection</span>
+      <h2>Thirty seats.<br>Chosen, not sold.</h2>
+      <p style="margin-top:16px">Admission is competitive. We're not selecting for experience — we're selecting for trajectory.</p>
+    </div>
+    <div>
+      <h3 style="margin-top:8px">What we look for</h3>
+      <ul>
+        <li>Currently enrolled university students, any programme of study</li>
+        <li>No coding experience required — evidence of drive is</li>
+        <li>Willingness to commit to both residencies in full</li>
+        <li>Pass the Fellowship assessment and interview</li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap" id="details">
+    <div class="details">
+      <div class="dcell"><span>Cohort</span><b>30 Fellows</b><p>Competitive admission, one cohort per year.</p></div>
+      <div class="dcell"><span>Fellowship fee</span><b>GHS 12,000</b><p>Flexible payment plans available.</p></div>
+      <div class="dcell"><span>Begins</span><b>September</b><p>Residency I — East Legon, Accra, or online.</p></div>
+      <div class="dcell"><span>Culminates</span><b>Demo Day</b><p>May — present your work to employers.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center" class="fit">
+      <div>
+        <span class="k">See it</span>
+        <h2>Life as a Fellow</h2>
+        <p style="margin-top:14px">Residency mornings, build nights, Demo Day. This is what a year of momentum looks like.</p>
+      </div>
+      <div class="ph"><span class="tag">Video placeholder</span><div class="ic">▶</div><b>Fellowship film — 60 seconds</b><span>Fast-cut: campus arrival, pair programming, whiteboards, laughter, a remote Fellow on a call, Demo Day applause. Shot with current students; premium pacing, minimal talking heads.</span></div>
+    </div>
+  </div>
+</section>
+
+<section style="background:var(--alt);border-top:1px solid var(--line)">
+  <div class="wrap narrow">
+    <span class="k">Questions</span>
+    <h2 style="margin-bottom:30px">Before you apply</h2>
+    <details><summary>Can I do this alongside my degree?</summary><p>That's the entire design. The intensive residencies run during the long vacation and the May window, and the semester track is 3–5 hours a week — lighter than one extra course. Your degree stays first.</p></details>
+    <details><summary>Can this satisfy my university's internship or attachment requirement?</summary><p>Yes — Residency I is structured to function as your internship. Each Fellow takes on a real problem facing a business or community in Ghana, builds a working solution, and demos it live at the end. With a named mentor and a completion letter documenting your work and hours, the residency serves as your internship or industrial attachment. Requirements differ by department, so check with your coordinator on what they'll accept.</p></details>
+    <details><summary>I've never written code. Can I still apply?</summary><p>Yes. The Fellowship starts from first principles. We select for drive, teachability, and commitment — not prior experience.</p></details>
+    <details><summary>What does it cost?</summary><p>The Fellowship fee is GHS 12,000 for the full year, with flexible payment plans. Talk to admissions about a plan that works for you.</p></details>
+    <details><summary>What happens after the Fellowship?</summary><p>You leave with a shipped portfolio, Demo Day exposure to employers, and a Codetrain Fellowship certificate. Top Fellows may earn advanced standing into Codetrain's flagship programme or consideration for the AI Program.</p></details>
+    <details><summary>Which universities can apply?</summary><p>Any. Fellows are selected from across universities and programmes of study — what unites them is ambition, not their department.</p></details>
+    <details><summary>How do I apply?</summary><p>Submit the online application, complete the Fellowship assessment, and if shortlisted, join a selection interview. Cohorts are capped at 30, so early applications are advised.</p></details>
+  </div>
+</section>
+
+<section class="dark final">
+  <div class="wrap">
+    <span class="k">Applications open</span>
+    <h2>One year from now, you'll be a different engineer.<br>Or the same student.</h2>
+    <p>Thirty seats. September start. The application takes ten minutes — the interview is where you earn it.</p>
+    <a class="btn btn-y" href="https://codetrainafrica.heiapply.com/application" target="_blank" rel="noopener">Apply for the Fellowship</a>
+    <p class="small">Questions? Call +233 545 792 397 or email admissions@codetrainafrica.com</p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot">
+    <span>© 2026 Codetrain — University Fellows Programme</span>
+    <span><a href="https://codetrainafrica.com" target="_blank" rel="noopener">codetrainafrica.com</a> · East Legon, Accra</span>
+  </div>
+</footer>
+
+</body>
+</html>
