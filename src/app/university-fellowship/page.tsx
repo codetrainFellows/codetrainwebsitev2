@@ -520,6 +520,24 @@ export default function UniversityFellowship() {
               margin-top: 56px;
             }
 
+            /* instagram reel embed */
+            .fellowship-page .reel-wrap {
+              border-radius: 20px;
+              overflow: hidden;
+              position: relative;
+              width: 100%;
+              max-width: 340px;
+              margin: 0 auto;
+              box-shadow: 0 20px 60px rgba(27, 16, 73, 0.18);
+            }
+
+            .fellowship-page .reel-wrap iframe {
+              display: block;
+              width: 100%;
+              height: 600px;
+              border: none;
+            }
+
             /* media placeholder */
             .fellowship-page .ph {
               border: 2px dashed #B7AEE0;
@@ -623,6 +641,22 @@ export default function UniversityFellowship() {
               color: rgba(255, 255, 255, 0.5);
             }
 
+            /* statement section two-col layout */
+            .fellowship-page .statement-grid {
+              display: grid;
+              grid-template-columns: 1fr 1fr;
+              gap: 64px;
+              align-items: center;
+            }
+
+            /* life as a fellow two-col layout */
+            .fellowship-page .life-grid {
+              display: grid;
+              grid-template-columns: 1fr 1fr;
+              gap: 40px;
+              align-items: center;
+            }
+
             @media (max-width: 880px) {
               .fellowship-page section {
                 padding: 80px 0;
@@ -641,7 +675,9 @@ export default function UniversityFellowship() {
               .fellowship-page .grid3,
               .fellowship-page .after,
               .fellowship-page .fit,
-              .fellowship-page .sel {
+              .fellowship-page .sel,
+              .fellowship-page .statement-grid,
+              .fellowship-page .life-grid {
                 grid-template-columns: 1fr;
               }
 
@@ -655,6 +691,54 @@ export default function UniversityFellowship() {
 
               .fellowship-page .statement .wrap {
                 grid-template-columns: 1fr;
+              }
+
+              .fellowship-page .statement-grid img {
+                order: -1;
+              }
+            }
+
+            @media (max-width: 640px) {
+              .fellowship-page section {
+                padding: 60px 0;
+              }
+
+              .fellowship-page .hero {
+                padding: 70px 0 60px;
+              }
+
+              .fellowship-page .hero-meta {
+                gap: 24px;
+                margin-top: 40px;
+              }
+
+              .fellowship-page .details {
+                grid-template-columns: 1fr;
+              }
+
+              .fellowship-page .chapter {
+                padding: 28px 20px;
+              }
+
+              .fellowship-page .calendar {
+                padding: 24px 18px;
+              }
+
+              .fellowship-page .cal-row {
+                grid-template-columns: 70px 1fr;
+                gap: 10px;
+              }
+
+              .fellowship-page .cell {
+                padding: 24px 20px;
+              }
+
+              .fellowship-page .wrap {
+                padding: 0 16px;
+              }
+
+              .fellowship-page .final {
+                padding: 80px 0;
               }
             }
 
@@ -715,7 +799,7 @@ export default function UniversityFellowship() {
       </header>
 
       <section className="statement">
-        <div className="wrap" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "64px", alignItems: "center" }}>
+        <div className="wrap statement-grid">
           <div>
             <span className="k">Why this exists</span>
             <p>
@@ -950,15 +1034,7 @@ export default function UniversityFellowship() {
 
       <section>
         <div className="wrap">
-          <div
-            className="fit"
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr 1fr",
-              gap: "40px",
-              alignItems: "center",
-            }}
-          >
+          <div className="life-grid">
             <div>
               <span className="k">See it</span>
               <h2>Life as a Fellow</h2>
@@ -966,14 +1042,15 @@ export default function UniversityFellowship() {
                 Residency mornings, build nights, Demo Day. This is what a year of momentum looks like.
               </p>
             </div>
-            <div className="ph">
-              <span className="tag">Video placeholder</span>
-              <div className="ic">▶</div>
-              <b>Fellowship film — 60 seconds</b>
-              <span>
-                Fast-cut: campus arrival, pair programming, whiteboards, laughter, a remote Fellow on a call, Demo Day
-                applause. Shot with current students; premium pacing, minimal talking heads.
-              </span>
+            <div className="reel-wrap">
+              <iframe
+                src="https://www.instagram.com/reel/Dafk4fcKLZk/embed/"
+                title="Codetrain University Fellows — Life as a Fellow"
+                allowFullScreen
+                loading="lazy"
+                scrolling="no"
+                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+              />
             </div>
           </div>
         </div>
