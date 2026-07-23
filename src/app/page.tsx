@@ -552,11 +552,11 @@ export default function Home() {
                 </a>
                 <a
                   className="btn btn-outline btn-sm"
-                  href="https://codetrainafrica.com/scholarship"
+                  href="https://wa.me/233545792397"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Apply for a scholarship
+                  WhatsApp Us
                 </a>
               </div>
             </div>

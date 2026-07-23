@@ -42,8 +42,9 @@ export default function Kids() {
             </div>
           </div>
           <img
-            src="/people/exp7.jpg"
+            src="/people/jeremy.jpg"
             alt="Young innovators at Codetrain Solara"
+            style={{ objectPosition: "top" }}
           />
         </div>
         <div className="wrap facts">
@@ -143,11 +144,11 @@ export default function Kids() {
               </a>
               <a
                 className="btn btn-outline"
-                href="https://codetrainafrica.com/scholarship"
+                href="https://wa.me/233545792397"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Apply for a part-scholarship
+                WhatsApp Us
               </a>
             </div>
           </div>
