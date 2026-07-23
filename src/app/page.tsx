@@ -254,6 +254,51 @@ export default function Home() {
           </div>
 
           <div className="group-label" style={{ display: "flex", alignItems: "center", gap: "10px" }}>
+            <Mic size={20} style={{ color: "var(--indigo)" }} />
+            <span>University Fellowship — for students who want real experience</span>
+          </div>
+          <div className="course-grid">
+            <article className="course" style={{ gridColumn: "1/-1" }}>
+              <div className="course-top" style={{ background: "#10B981" }}></div>
+              <div className="course-body">
+                <div className="course-tags">
+                  <span className="tag">University students</span>
+                  <span className="tag">By selection · 30 Fellows</span>
+                  <span className="tag">In-person or online</span>
+                </div>
+                <h3>University Fellows Programme</h3>
+                <p>
+                  A one-year fellowship for university students who want real engineering experience, not just a
+                  certificate. Two residencies bookend a semester of guided practice: build real skills, solve a real
+                  problem for a Ghanaian business or community, and demo it live — with a mentor's sign-off and a
+                  completion letter covering your internship hours.
+                </p>
+                <div className="facts-line">
+                  <b>12 months</b>
+                  <i>•</i>
+                  <span>In-person (East Legon) or online · 30 Fellows per cohort, by selection</span>
+                  <i>•</i>
+                  <b>GHS 12,000</b>
+                  <span>· flexible payment plans</span>
+                </div>
+                <div className="course-cta">
+                  <a
+                    className="btn btn-primary"
+                    href="https://codetrainafrica.heiapply.com/application"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Apply now
+                  </a>
+                  <Link className="more" href="/university-fellowship">
+                    Fellowship details →
+                  </Link>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div className="group-label" style={{ display: "flex", alignItems: "center", gap: "10px" }}>
             <Baby size={20} style={{ color: "var(--indigo)" }} />
             <span>For the next generation</span>
           </div>

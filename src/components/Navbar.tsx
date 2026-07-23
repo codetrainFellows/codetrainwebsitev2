@@ -73,6 +73,13 @@ export default function Navbar() {
                   <small>3 Saturdays · for professionals, no coding</small>
                 </span>
               </Link>
+              <Link href="/university-fellowship" onClick={closeMenu}>
+                <span className="tag-dot" style={{ background: "#10B981" }}></span>
+                <span>
+                  University Fellowship
+                  <small>1 year · for university students</small>
+                </span>
+              </Link>
               <Link href="/kids" onClick={closeMenu}>
                 <span className="tag-dot" style={{ background: "var(--yellow)" }}></span>
                 <span>

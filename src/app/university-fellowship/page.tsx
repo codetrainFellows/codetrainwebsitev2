@@ -652,6 +652,10 @@ export default function UniversityFellowship() {
               .fellowship-page .fit {
                 gap: 40px;
               }
+
+              .fellowship-page .statement .wrap {
+                grid-template-columns: 1fr;
+              }
             }
 
             @media (prefers-reduced-motion: reduce) {
@@ -711,13 +715,20 @@ export default function UniversityFellowship() {
       </header>
 
       <section className="statement">
-        <div className="wrap narrow">
-          <span className="k">Why this exists</span>
-          <p>
-            Every year, thousands of students graduate with the same certificate. Employers can't tell them apart — so
-            they hire the ones who can <b>build</b>. The Fellowship exists to make you one of them: a university student
-            who ships real software, presents real work, and walks into interviews with proof instead of promises.
-          </p>
+        <div className="wrap" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "64px", alignItems: "center" }}>
+          <div>
+            <span className="k">Why this exists</span>
+            <p>
+              Every year, thousands of students graduate with the same certificate. Employers can't tell them apart — so
+              they hire the ones who can <b>build</b>. The Fellowship exists to make you one of them: a university student
+              who ships real software, presents real work, and walks into interviews with proof instead of promises.
+            </p>
+          </div>
+          <img
+            src="/people/home-hero.png"
+            alt="Codetrain University Fellows"
+            style={{ width: "100%", borderRadius: "20px" }}
+          />
         </div>
       </section>
 
