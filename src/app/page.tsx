@@ -108,7 +108,7 @@ export default function Home() {
                   <span className="tag hot">Flagship</span>
                   <span className="tag">Beginner-friendly</span>
                 </div>
-                <h3>Full Stack AI Developer (Software Engineering)</h3>
+                <h3>Software Engineering (Full Stack AI Developer)</h3>
                 <p>
                   From zero to building and shipping AI-powered software products. Three milestone-gated phases:
                   master full-stack development, integrate AI into real products, then deploy a production AI system

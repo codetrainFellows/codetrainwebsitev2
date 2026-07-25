@@ -2,7 +2,7 @@ import React from "react";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Full Stack AI Developer (Software Engineering) | Codetrain Africa",
+  title: "Software Engineering (Full Stack AI Developer) | Codetrain Africa",
   description: "Become a Full Stack AI Developer in 18 months. Master MERN stack, integrate LLM APIs (Claude, OpenAI, Gemini), build RAG pipelines, and deploy production AI systems with real users. No prior experience required.",
 };
 
