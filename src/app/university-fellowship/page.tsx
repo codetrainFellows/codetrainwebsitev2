@@ -694,7 +694,7 @@ export default function UniversityFellowship() {
               }
 
               .fellowship-page .statement-grid img {
-                order: -1;
+                order: 1;
               }
             }
 
