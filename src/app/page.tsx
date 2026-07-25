@@ -145,7 +145,7 @@ export default function Home() {
                   <span className="tag">Beginner-friendly</span>
                   <span className="tag">Career changers welcome</span>
                 </div>
-                <h3>Product Design</h3>
+                <h3>Product Design and AI</h3>
                 <p>
                   Design digital products from research through to live, published applications. Master design
                   fundamentals, AI-assisted workflows, Figma, and Framer — graduating with a capstone product used
@@ -559,7 +559,7 @@ export default function Home() {
               <span className="tag hot" style={{ marginBottom: "10px", display: "inline-block" }}>
                 18-month career programmes
               </span>
-              <h3>Full Stack AI Developer · Product Design</h3>
+              <h3>Software Engineering and AI (Full Stack AI Developer) · Product Design and AI</h3>
               <div className="price">
                 GHS 38,500 <small>· $3,000 for international applicants · up to 50% scholarship available</small>
               </div>
@@ -695,7 +695,7 @@ export default function Home() {
             <details>
               <summary>How long are the programmes?</summary>
               <p>
-                The Full Stack AI Developer and Product Design programmes are 18 months. The AI Program (Talent
+                The Software Engineering and AI (Full Stack AI Developer) and Product Design and AI programmes are 18 months. The AI Program (Talent
                 Accelerator) is 16 weeks, with a 12-week accelerated track by assessment. The AI Advantage Programme
                 runs over 3 Saturdays.
               </p>

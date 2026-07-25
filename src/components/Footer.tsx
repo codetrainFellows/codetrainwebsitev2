@@ -21,8 +21,8 @@ export default function Footer() {
           </div>
           <div>
             <h4>Courses</h4>
-            <Link href="/software-engineering">Full Stack AI Developer</Link>
-            <Link href="/product-design">Product Design</Link>
+            <Link href="/software-engineering">Software Engineering and AI (Full Stack AI Developer)</Link>
+            <Link href="/product-design">Product Design and AI</Link>
             <Link href="/ai-program">AI Program — Talent Accelerator</Link>
             <Link href="/ai-advantage">AI Advantage Programme</Link>
             <Link href="/kids">Codetrain Solara (Kids)</Link>

@@ -2,8 +2,8 @@ import React from "react";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Product Design | Codetrain Africa",
-  description: "Learn Product Design (UI/UX) in 18 months. Master design fundamentals, Figma, AI-assisted workflows, and Framer to design and publish real applications. No prior experience required.",
+  title: "Product Design and AI | Codetrain Africa",
+  description: "Learn Product Design and AI (UI/UX) in 18 months. Master design fundamentals, Figma, AI-assisted workflows, and Framer to design and publish real applications. No prior experience required.",
 };
 
 export default function ProductDesign() {
@@ -15,7 +15,7 @@ export default function ProductDesign() {
             <span className="kicker" style={{ color: "var(--pink)", background: "#FFE5F0" }}>
               Beginner-friendly · 18 months
             </span>
-            <h1>Product Design</h1>
+            <h1>Product Design and AI</h1>
             <p className="lede">
               Graduates design digital products from research through to live, published applications — working in
               Ghana's growing tech sector, African startups, and with international clients who need African designers

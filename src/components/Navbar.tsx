@@ -48,14 +48,14 @@ export default function Navbar() {
               <Link href="/software-engineering" onClick={closeMenu}>
                 <span className="tag-dot" style={{ background: "var(--violet)" }}></span>
                 <span>
-                  Full Stack AI Developer
+                  Software Engineering and AI (Full Stack AI Developer)
                   <small>Flagship · 18 months · beginner-friendly</small>
                 </span>
               </Link>
               <Link href="/product-design" onClick={closeMenu}>
                 <span className="tag-dot" style={{ background: "var(--pink)" }}></span>
                 <span>
-                  Product Design
+                  Product Design and AI
                   <small>18 months · research to published products</small>
                 </span>
               </Link>

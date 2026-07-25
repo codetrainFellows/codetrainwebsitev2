@@ -1044,7 +1044,7 @@ export default function UniversityFellowship() {
             </div>
             <div className="reel-wrap">
               <iframe
-                src="https://www.instagram.com/reel/Dafk4fcKLZk/embed/"
+                src="https://www.instagram.com/reel/DZxKOK-ql5n/embed/"
                 title="Codetrain University Fellows — Life as a Fellow"
                 allowFullScreen
                 loading="lazy"

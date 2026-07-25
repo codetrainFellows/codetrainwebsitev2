@@ -2,8 +2,8 @@ import React from "react";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Software Engineering (Full Stack AI Developer) | Codetrain Africa",
-  description: "Become a Full Stack AI Developer in 18 months. Master MERN stack, integrate LLM APIs (Claude, OpenAI, Gemini), build RAG pipelines, and deploy production AI systems with real users. No prior experience required.",
+  title: "Software Engineering and AI (Full Stack AI Developer) | Codetrain Africa",
+  description: "Become a Software Engineering and AI (Full Stack AI Developer) graduate in 18 months. Master MERN stack, integrate LLM APIs (Claude, OpenAI, Gemini), build RAG pipelines, and deploy production AI systems with real users. No prior experience required.",
 };
 
 export default function SoftwareEngineering() {
@@ -13,7 +13,7 @@ export default function SoftwareEngineering() {
         <div className="wrap chero-grid">
           <div>
             <span className="kicker">Flagship · Beginner-friendly · 18 months</span>
-            <h1>Full Stack AI Developer</h1>
+            <h1>Software Engineering (Full Stack AI Developer)</h1>
             <p className="lede">
               Graduates of this programme build and ship AI-powered software products — and compete for engineering
               roles at Ghanaian companies, African startups, and global employers in Germany, the UK, the US, and

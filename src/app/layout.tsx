@@ -22,7 +22,7 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  title: "Codetrain Africa | AI-Native Software Engineering & Product Design",
+  title: "Codetrain Africa | AI-Native Software Engineering & Product Design and AI",
   description:
     "Learn fullstack web and mobile apps development from the most holistic coding bootcamp. We have live interactive virtual and in-person options available.",
   keywords: [
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     "codetrain africa",
   ],
   openGraph: {
-    title: "Codetrain Africa | AI-Native Software Engineering & Product Design",
+    title: "Codetrain Africa | AI-Native Software Engineering & Product Design and AI",
     description:
       "Learn fullstack web and mobile apps development from the most holistic coding bootcamp. We have live interactive virtual and in-person options available.",
     url: "https://www.codetrainafrica.com/",
@@ -55,7 +55,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Codetrain Africa | AI-Native Software Engineering & Product Design",
+    title: "Codetrain Africa | AI-Native Software Engineering & Product Design and AI",
     description:
       "Learn fullstack web and mobile apps development from the most holistic coding bootcamp.",
     images: ["https://www.codetrainafrica.com/people/new1.jpg"],
