@@ -2,7 +2,7 @@ import React from "react";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "AI Program — Talent Accelerator | Codetrain Africa",
+  title: "AI Program ( For Software Developers ) | Codetrain Africa",
   description: "Transform from a web developer to an AI engineer in 16 weeks. Master Python, LLM APIs, prompt engineering, RAG, agents, LangChain, vector databases, and production scaling.",
 };
 
@@ -15,7 +15,7 @@ export default function AiProgram() {
             <span className="kicker" style={{ color: "var(--indigo)", background: "#F0E7FD" }}>
               For working developers · Next cohort October 2026
             </span>
-            <h1>AI Program — Talent Accelerator</h1>
+            <h1>AI Program ( For Software Developers )</h1>
             <p className="lede">
               A 16-week intensive that turns experienced web developers into AI engineers. If you build with JavaScript
               today, you'll leave shipping production AI systems — LLM-powered apps, RAG pipelines, and agents — with

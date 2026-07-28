@@ -177,8 +177,8 @@ export default function Home() {
           </div>
 
           <div className="group-label" style={{ display: "flex", alignItems: "center", gap: "10px" }}>
-            <Bot size={20} style={{ color: "var(--indigo)" }} />
-            <span>AI programmes — upgrade the skills you already have</span>
+            {/* <Bot size={20} style={{ color: "var(--indigo)" }} /> */}
+            {/* <span>AI programmes — upgrade the skills you already have</span> */}
           </div>
           <div className="course-grid">
             <article className="course">
@@ -187,7 +187,7 @@ export default function Home() {
                 <div className="course-tags">
                   <span className="tag">For working developers</span>
                 </div>
-                <h3>AI Program — Talent Accelerator</h3>
+                <h3>AI Program ( For Software Developers )</h3>
                 <p>
                   A 16-week intensive that turns experienced web developers into AI engineers. LLM apps, RAG,
                   agents, and production systems — graduating with a deployed AI product that has real users.
@@ -611,7 +611,7 @@ export default function Home() {
               </span>
               <div className="mini-fee">
                 <span className="p">GHS 15,000</span>
-                <b>AI Program — Talent Accelerator</b>
+                <b>AI Program ( For Software Developers )</b>
                 <span>16 weeks · for working developers</span>
               </div>
               <div className="mini-fee">

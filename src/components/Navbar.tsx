@@ -62,7 +62,7 @@ export default function Navbar() {
               <Link href="/ai-program" onClick={closeMenu}>
                 <span className="tag-dot" style={{ background: "var(--indigo)" }}></span>
                 <span>
-                  AI Program — Talent Accelerator
+                  AI Program ( For Software Developers )
                   <small>16 weeks · for working developers</small>
                 </span>
               </Link>
