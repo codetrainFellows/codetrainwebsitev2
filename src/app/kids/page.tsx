@@ -1,6 +1,6 @@
 import React from "react";
 import type { Metadata } from "next";
-import { Monitor, Rocket, Mic, Globe, GraduationCap, Code } from "lucide-react";
+import { Monitor, Rocket, Mic, Globe, GraduationCap, User, Briefcase } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Codetrain Solara (Kids Coding) | Codetrain Africa",
@@ -44,47 +44,56 @@ export default function Kids() {
           <div className="hero-story-photo">
             <img
               src="/people/jeremy.jpg"
-              alt="Jermaine Antwi speaking on stage at Demo Day"
-              style={{ objectPosition: "top" }}
+              alt="Jermaine speaking on stage at Demo Day"
             />
-            <div className="hero-story-panel">
-              <div className="hero-story-name">Jermaine Antwi</div>
+            <div className="hero-story-overlay">
+              <div className="hero-story-name">Jermaine</div>
               <span className="hero-story-tag">Started Solara at Age 8</span>
               <ul className="hero-story-stats">
                 <li>
-                  <span className="hero-story-icon">
-                    <GraduationCap size={16} />
-                  </span>
+                  <span className="hero-story-icon"><User size={14} /></span>
                   <span>
-                    Enrolled at Codetrain at <b>just 8 years old</b>
+                    <b>Age 8</b>
+                    Enrolled at Codetrain at just 8 years old
                   </span>
                 </li>
                 <li>
-                  <span className="hero-story-icon">
-                    <Monitor size={16} />
-                  </span>
+                  <span className="hero-story-icon"><Monitor size={14} /></span>
                   <span>
-                    Built a <b>COVID-19 statistics app</b>
-                    <small>By age 11</small>
+                    <b>Age 11</b>
+                    Built a COVID-19 statistics app
                   </span>
                 </li>
                 <li>
-                  <span className="hero-story-icon">
-                    <Code size={16} />
-                  </span>
+                  <span className="hero-story-icon"><Rocket size={14} /></span>
                   <span>
-                    Mastered full-stack development — <b>JavaScript, React, MongoDB</b>
+                    <b>Age 12</b>
+                    Started his first company
                   </span>
                 </li>
                 <li>
-                  <span className="hero-story-icon">
-                    <Globe size={16} />
-                  </span>
+                  <span className="hero-story-icon"><Briefcase size={14} /></span>
                   <span>
-                    Now advises <b>two companies</b> and mentors at Moonshot Pirates, Austria
+                    <b>Teen Years</b>
+                    Interned with a technology startup
+                  </span>
+                </li>
+                <li className="hero-story-climax">
+                  <span className="hero-story-icon"><GraduationCap size={14} /></span>
+                  <span>
+                    <b>Today</b>
+                    Earned 5 full A-Level scholarship offers in the UK
+                    <span className="hero-story-badge">Including Eton College, UK</span>
                   </span>
                 </li>
               </ul>
+              <div className="hero-story-quote">
+                <span className="hero-quote-mark">&ldquo;</span>
+                <p>
+                  <em>Start early. Stay curious.</em>
+                  <span>The future is built by those who start today.</span>
+                </p>
+              </div>
             </div>
           </div>
         </div>

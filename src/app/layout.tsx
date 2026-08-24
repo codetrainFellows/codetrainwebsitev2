@@ -109,20 +109,10 @@ export default function RootLayout({
         <div className="announce" style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: "6px", flexWrap: "wrap" }}>
           <GraduationCap size={16} style={{ color: "var(--violet)", flexShrink: 0 }} />
           <span className="announce-desktop">
-            <b>Admissions Are Open.</b> Find the right program for you —{" "}
-            <a href="https://tally.so/r/b510B7" target="_blank" rel="noopener noreferrer">
-              Request a Consultation
-            </a>{" "}
-            |{" "}
-            <a href="https://tally.so/r/b510B7" target="_blank" rel="noopener noreferrer">
-              Join an Orientation
-            </a>
+            <b>Admissions Are Open.</b> Find the right program for you — Request a call <span className="announce-divider" /> Join an Orientation
           </span>
           <span className="announce-mobile">
-            Admissions Now Open →{" "}
-            <a href="https://tally.so/r/b510B7" target="_blank" rel="noopener noreferrer">
-              Request a Call
-            </a>
+            Admissions Now Open → Request a call
           </span>
         </div>
         <Navbar />

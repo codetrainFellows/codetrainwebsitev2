@@ -141,6 +141,17 @@ section {
   text-underline-offset: 2px;
 }
 
+.announce-divider {
+  display: inline-block;
+  width: 2px;
+  height: 16px;
+  background-color: var(--violet);
+  margin: 0 10px;
+  vertical-align: -3px;
+  border-radius: 1px;
+  opacity: 0.75;
+}
+
 .announce-mobile {
   display: none;
 }
@@ -1009,51 +1020,58 @@ details p {
   position: relative;
   border-radius: 20px;
   box-shadow: var(--shadow);
-  aspect-ratio: 5/4;
   overflow: hidden;
 }
 
 .hero-story-photo img {
+  position: absolute;
+  inset: 0;
   border-radius: 0;
   box-shadow: none;
   width: 100%;
   height: 100%;
+  object-fit: cover;
+  object-position: 85% top;
 }
 
-.hero-story-panel {
-  position: absolute;
-  top: 14px;
-  left: 14px;
-  bottom: 14px;
-  width: 58%;
-  background: var(--violet);
-  border-radius: 14px;
-  padding: 22px 18px;
+.hero-story-overlay {
+  position: relative;
+  z-index: 1;
+  min-height: 480px;
+  background: linear-gradient(
+    to right,
+    #0d1547 0%,
+    rgba(13, 21, 71, 0.92) 32%,
+    rgba(13, 21, 71, 0.6) 52%,
+    rgba(13, 21, 71, 0.15) 75%,
+    rgba(13, 21, 71, 0) 90%
+  );
+  padding: 26px 22px 20px;
   display: flex;
   flex-direction: column;
   color: #fff;
-  box-shadow: 0 14px 30px -12px rgba(27, 16, 73, 0.6);
 }
 
 .hero-story-name {
-  font-size: 1.2rem;
-  font-weight: 800;
-  letter-spacing: -0.01em;
+  font-size: 2rem;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  line-height: 1;
 }
 
 .hero-story-tag {
   color: var(--yellow);
   font-weight: 700;
-  font-size: 0.82rem;
+  font-size: 0.9rem;
   margin-top: 6px;
-  padding-bottom: 10px;
-  border-bottom: 2px solid rgba(255, 190, 12, 0.5);
+  padding-bottom: 12px;
+  border-bottom: 2px solid rgba(255, 190, 12, 0.45);
   display: inline-block;
 }
 
 .hero-story-stats {
   list-style: none;
-  margin: 14px 0 0;
+  margin: 12px 0 0;
   padding: 0;
   display: flex;
   flex-direction: column;
@@ -1063,8 +1081,9 @@ details p {
   display: flex;
   gap: 10px;
   align-items: flex-start;
-  padding: 10px 0;
-  border-top: 1px solid rgba(255, 255, 255, 0.14);
+  padding: 9px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  position: relative;
 }
 
 .hero-story-stats li:first-child {
@@ -1072,41 +1091,121 @@ details p {
 }
 
 .hero-story-icon {
-  width: 27px;
-  height: 27px;
-  border-radius: 8px;
-  background: rgba(255, 190, 12, 0.16);
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 1.5px solid rgba(255, 190, 12, 0.45);
+  background: rgba(255, 190, 12, 0.1);
   color: var(--yellow);
   display: flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
+  margin-top: 1px;
 }
 
 .hero-story-stats li > span:not(.hero-story-icon) {
   font-size: 0.78rem;
-  line-height: 1.4;
-  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.45;
+  color: rgba(255, 255, 255, 0.82);
 }
 
 .hero-story-stats b {
-  color: #fff;
-  font-weight: 700;
-}
-
-.hero-story-stats small {
   display: block;
   color: var(--yellow);
-  font-weight: 700;
-  font-size: 0.68rem;
-  margin-top: 2px;
+  font-weight: 800;
+  font-size: 0.7rem;
   text-transform: uppercase;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.06em;
+  margin-bottom: 1px;
+}
+
+/* Last milestone — bigger emphasis */
+.hero-story-climax > span:not(.hero-story-icon) {
+  font-size: 0.84rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.hero-story-badge {
+  display: block;
+  margin-top: 5px;
+  background: var(--yellow);
+  color: #0d1547;
+  font-size: 0.6rem;
+  font-weight: 800;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  padding: 3px 8px;
+  border-radius: 4px;
+  width: fit-content;
+}
+
+/* Quote footer */
+.hero-story-quote {
+  margin-top: 16px;
+  padding-top: 14px;
+  border-top: 1px solid rgba(255, 190, 12, 0.25);
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+}
+
+.hero-quote-mark {
+  font-size: 2.6rem;
+  line-height: 0.8;
+  color: var(--yellow);
+  font-family: Georgia, serif;
+  flex-shrink: 0;
+}
+
+.hero-story-quote p {
+  margin: 0;
+  font-size: 0.8rem;
+  line-height: 1.5;
+}
+
+.hero-story-quote em {
+  display: block;
+  color: #fff;
+  font-style: italic;
+  font-weight: 500;
+}
+
+.hero-story-quote p > span {
+  display: block;
+  color: var(--yellow);
+  font-weight: 600;
+  margin-top: 2px;
+  font-style: normal;
 }
 
 @media (max-width: 720px) {
-  .hero-story-panel {
-    width: 68%;
+  .hero-story-overlay {
+    min-height: 420px;
+    background: linear-gradient(
+      to right,
+      rgba(13, 21, 71, 0.97) 0%,
+      rgba(13, 21, 71, 0.88) 58%,
+      rgba(13, 21, 71, 0.6) 100%
+    );
+  }
+
+  .hero-story-name {
+    font-size: 1.6rem;
+  }
+
+  .hero-story-stats li {
+    padding: 6px 0;
+  }
+
+  .hero-story-stats li > span:not(.hero-story-icon) {
+    font-size: 0.74rem;
+  }
+
+  .hero-story-quote {
+    margin-top: 12px;
+    padding-top: 10px;
   }
 }
 
