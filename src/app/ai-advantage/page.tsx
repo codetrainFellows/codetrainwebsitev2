@@ -24,11 +24,11 @@ export default function AiAdvantage() {
             <div className="hero-ctas">
               <a
                 className="btn btn-primary"
-                href="https://codetrainafrica.heiapply.com/application"
+                href="https://tally.so/r/b510B7"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Apply for a cohort
+                Request a call
               </a>
               <a
                 className="btn btn-outline"

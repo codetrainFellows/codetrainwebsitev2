@@ -43,7 +43,7 @@ export default function Home() {
               </a>
             </div>
             <p className="hero-note">
-              <b>●</b> Admission is in progress — join the July cohort
+              <b>●</b> Admission is in progress — join our upcoming orientation event
             </p>
           </div>
           <div className="hero-img">
@@ -125,11 +125,11 @@ export default function Home() {
                 <div className="course-cta">
                   <a
                     className="btn btn-primary"
-                    href="https://codetrainafrica.heiapply.com/application"
+                    href="https://tally.so/r/b510B7"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    Enroll now
+                    Request a call
                   </a>
                   <Link className="more" href="/software-engineering">
                     Course details →
@@ -162,11 +162,11 @@ export default function Home() {
                 <div className="course-cta">
                   <a
                     className="btn btn-primary"
-                    href="https://codetrainafrica.heiapply.com/application"
+                    href="https://tally.so/r/b510B7"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    Enroll now
+                    Request a call
                   </a>
                   <Link className="more" href="/product-design">
                     Course details →
@@ -203,11 +203,11 @@ export default function Home() {
                 <div className="course-cta">
                   <a
                     className="btn btn-primary"
-                    href="https://codetrainafrica.heiapply.com/application"
+                    href="https://tally.so/r/b510B7"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    Apply now
+                    Request a call
                   </a>
                   <Link className="more" href="/ai-program">
                     Course details →
@@ -239,11 +239,11 @@ export default function Home() {
                 <div className="course-cta">
                   <a
                     className="btn btn-primary"
-                    href="https://codetrainafrica.heiapply.com/application"
+                    href="https://tally.so/r/b510B7"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    Apply for a cohort
+                    Request a call
                   </a>
                   <Link className="more" href="/ai-advantage">
                     Programme details →
@@ -284,11 +284,11 @@ export default function Home() {
                 <div className="course-cta">
                   <a
                     className="btn btn-primary"
-                    href="https://codetrainafrica.heiapply.com/application"
+                    href="https://tally.so/r/b510B7"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    Apply now
+                    Request a call
                   </a>
                   <Link className="more" href="/university-fellowship">
                     Fellowship details →
@@ -327,11 +327,11 @@ export default function Home() {
                 <div className="course-cta">
                   <a
                     className="btn btn-primary"
-                    href="https://codetrainafrica.heiapply.com/application"
+                    href="https://tally.so/r/b510B7"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    Enroll now
+                    Request a call
                   </a>
                   <Link className="more" href="/kids">
                     Course details →
@@ -370,11 +370,11 @@ export default function Home() {
             <div style={{ marginTop: "22px", display: "flex", gap: "12px", flexWrap: "wrap" }}>
               <a
                 className="btn btn-primary"
-                href="https://codetrainafrica.heiapply.com/application"
+                href="https://tally.so/r/b510B7"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Enroll now
+                Request a call
               </a>
               <a className="btn btn-outline" href="#stories">
                 More success stories
@@ -751,11 +751,11 @@ export default function Home() {
             <div style={{ display: "flex", gap: "14px", justifyContent: "center", flexWrap: "wrap" }}>
               <a
                 className="btn btn-primary"
-                href="https://codetrainafrica.heiapply.com/application"
+                href="https://tally.so/r/b510B7"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Enroll Now
+                Request a call
               </a>
               <a
                 className="btn btn-outline"

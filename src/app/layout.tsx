@@ -109,9 +109,9 @@ export default function RootLayout({
         <div className="announce" style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: "6px", flexWrap: "wrap" }}>
           <GraduationCap size={16} style={{ color: "var(--yellow)" }} />
           <span>
-            Admissions in progress — July cohort for our 18-month programmes · AI programmes start October.{" "}
-            <a href="https://tally.so/r/wodqVO" target="_blank" rel="noopener noreferrer">
-              Join our free info session
+            Admissions in progress — join our upcoming orientation event · AI programmes start October.{" "}
+            <a href="https://tally.so/r/b510B7" target="_blank" rel="noopener noreferrer">
+              Join our orientation event
             </a>
           </span>
         </div>

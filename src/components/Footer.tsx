@@ -86,7 +86,6 @@ export default function Footer() {
         </div>
         <div className="foot-bottom">
           <span>© 2026 Codetrain — All Rights Reserved</span>
-          <span>Made in Accra 🇬🇭</span>
         </div>
       </div>
     </footer>

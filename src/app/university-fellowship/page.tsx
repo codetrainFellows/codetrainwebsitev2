@@ -767,11 +767,11 @@ export default function UniversityFellowship() {
           <div className="hero-ctas">
             <a
               className="btn btn-y"
-              href="https://codetrainafrica.heiapply.com/application"
+              href="https://tally.so/r/b510B7"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Apply for a fellowship
+              Request a call
             </a>
             <a className="btn btn-o" href="#year">
               See the year →
@@ -1127,11 +1127,11 @@ export default function UniversityFellowship() {
           <p>Thirty seats. September start. The application takes ten minutes — the interview is where you earn it.</p>
           <a
             className="btn btn-y"
-            href="https://codetrainafrica.heiapply.com/application"
+            href="https://tally.so/r/b510B7"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Apply for the Fellowship
+            Request a call
           </a>
           <p className="small">Questions? Call +233 545 792 397 or email admissions@codetrainafrica.com</p>
         </div>

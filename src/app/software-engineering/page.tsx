@@ -22,11 +22,11 @@ export default function SoftwareEngineering() {
             <div className="hero-ctas">
               <a
                 className="btn btn-primary"
-                href="https://codetrainafrica.heiapply.com/application"
+                href="https://tally.so/r/b510B7"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Enroll now
+                Request a call
               </a>
               <a
                 className="btn btn-outline"
@@ -58,7 +58,7 @@ export default function SoftwareEngineering() {
           </div>
           <div className="fact">
             <span>Next cohort</span>
-            <b>July 2026</b>
+            <b>October 2026</b>
           </div>
         </div>
       </header>
@@ -184,11 +184,11 @@ export default function SoftwareEngineering() {
             <div style={{ marginTop: "24px", display: "flex", gap: "12px", flexWrap: "wrap" }}>
               <a
                 className="btn btn-primary"
-                href="https://codetrainafrica.heiapply.com/application"
+                href="https://tally.so/r/b510B7"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Enroll now
+                Request a call
               </a>
               <a
                 className="btn btn-outline"

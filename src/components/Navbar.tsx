@@ -99,12 +99,12 @@ export default function Navbar() {
 
           <a
             className="btn btn-primary btn-sm"
-            href="https://codetrainafrica.heiapply.com/application"
+            href="https://tally.so/r/b510B7"
             target="_blank"
             rel="noopener noreferrer"
             onClick={closeMenu}
           >
-            Apply Now
+            Request a call
           </a>
         </div>
       </div>
