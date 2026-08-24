@@ -99,7 +99,7 @@ export default function Navbar() {
 
           <a
             className="btn btn-primary btn-sm"
-            href="https://tally.so/r/b510B7"
+            href="https://tally.so/r/LZLzQ1"
             target="_blank"
             rel="noopener noreferrer"
             onClick={closeMenu}

@@ -24,7 +24,7 @@ export default function AiAdvantage() {
             <div className="hero-ctas">
               <a
                 className="btn btn-primary"
-                href="https://tally.so/r/b510B7"
+                href="https://tally.so/r/QK954A"
                 target="_blank"
                 rel="noopener noreferrer"
               >

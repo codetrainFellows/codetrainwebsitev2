@@ -24,7 +24,7 @@ export default function ProductDesign() {
             <div className="hero-ctas">
               <a
                 className="btn btn-primary"
-                href="https://tally.so/r/b510B7"
+                href="https://tally.so/r/xX5jKy"
                 target="_blank"
                 rel="noopener noreferrer"
               >

@@ -125,7 +125,7 @@ export default function Home() {
                 <div className="course-cta">
                   <a
                     className="btn btn-primary"
-                    href="https://tally.so/r/b510B7"
+                    href="https://tally.so/r/eqWDvo"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -162,7 +162,7 @@ export default function Home() {
                 <div className="course-cta">
                   <a
                     className="btn btn-primary"
-                    href="https://tally.so/r/b510B7"
+                    href="https://tally.so/r/xX5jKy"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -203,7 +203,7 @@ export default function Home() {
                 <div className="course-cta">
                   <a
                     className="btn btn-primary"
-                    href="https://tally.so/r/b510B7"
+                    href="https://tally.so/r/ODMlO7"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -239,7 +239,7 @@ export default function Home() {
                 <div className="course-cta">
                   <a
                     className="btn btn-primary"
-                    href="https://tally.so/r/b510B7"
+                    href="https://tally.so/r/QK954A"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -284,7 +284,7 @@ export default function Home() {
                 <div className="course-cta">
                   <a
                     className="btn btn-primary"
-                    href="https://tally.so/r/b510B7"
+                    href="https://tally.so/r/q4QAvd"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -751,7 +751,7 @@ export default function Home() {
             <div style={{ display: "flex", gap: "14px", justifyContent: "center", flexWrap: "wrap" }}>
               <a
                 className="btn btn-primary"
-                href="https://tally.so/r/b510B7"
+                href="https://tally.so/r/LZLzQ1"
                 target="_blank"
                 rel="noopener noreferrer"
               >
