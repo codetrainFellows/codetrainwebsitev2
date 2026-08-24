@@ -1,6 +1,6 @@
 import React from "react";
 import type { Metadata } from "next";
-import { Monitor, Rocket, Mic, Globe } from "lucide-react";
+import { Monitor, Rocket, Mic, Globe, GraduationCap, Code } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Codetrain Solara (Kids Coding) | Codetrain Africa",
@@ -41,11 +41,52 @@ export default function Kids() {
               </a>
             </div>
           </div>
-          <img
-            src="/people/jeremy.jpg"
-            alt="Young innovators at Codetrain Solara"
-            style={{ objectPosition: "top" }}
-          />
+          <div className="hero-story-photo">
+            <img
+              src="/people/jeremy.jpg"
+              alt="Jermaine Antwi speaking on stage at Demo Day"
+              style={{ objectPosition: "top" }}
+            />
+            <div className="hero-story-panel">
+              <div className="hero-story-name">Jermaine Antwi</div>
+              <span className="hero-story-tag">Started Solara at Age 8</span>
+              <ul className="hero-story-stats">
+                <li>
+                  <span className="hero-story-icon">
+                    <GraduationCap size={16} />
+                  </span>
+                  <span>
+                    Enrolled at Codetrain at <b>just 8 years old</b>
+                  </span>
+                </li>
+                <li>
+                  <span className="hero-story-icon">
+                    <Monitor size={16} />
+                  </span>
+                  <span>
+                    Built a <b>COVID-19 statistics app</b>
+                    <small>By age 11</small>
+                  </span>
+                </li>
+                <li>
+                  <span className="hero-story-icon">
+                    <Code size={16} />
+                  </span>
+                  <span>
+                    Mastered full-stack development — <b>JavaScript, React, MongoDB</b>
+                  </span>
+                </li>
+                <li>
+                  <span className="hero-story-icon">
+                    <Globe size={16} />
+                  </span>
+                  <span>
+                    Now advises <b>two companies</b> and mentors at Moonshot Pirates, Austria
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
         <div className="wrap facts">
           <div className="fact">

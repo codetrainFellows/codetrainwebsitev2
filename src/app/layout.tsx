@@ -4,8 +4,8 @@ import { Outfit } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { GraduationCap } from "lucide-react";
 import Script from "next/script";
+import { GraduationCap } from "lucide-react";
 
 // Load Helvetica local font mapped to the sans-serif variable
 const helvetica = localFont({
@@ -107,11 +107,21 @@ export default function RootLayout({
       </head>
       <body>
         <div className="announce" style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: "6px", flexWrap: "wrap" }}>
-          <GraduationCap size={16} style={{ color: "var(--yellow)" }} />
-          <span>
-            Admissions in progress — join our upcoming orientation event · AI programmes start October.{" "}
+          <GraduationCap size={16} style={{ color: "var(--violet)", flexShrink: 0 }} />
+          <span className="announce-desktop">
+            <b>Admissions Are Open.</b> Find the right program for you —{" "}
             <a href="https://tally.so/r/b510B7" target="_blank" rel="noopener noreferrer">
-              Join our orientation event
+              Request a Consultation
+            </a>{" "}
+            |{" "}
+            <a href="https://tally.so/r/b510B7" target="_blank" rel="noopener noreferrer">
+              Join an Orientation
+            </a>
+          </span>
+          <span className="announce-mobile">
+            Admissions Now Open →{" "}
+            <a href="https://tally.so/r/b510B7" target="_blank" rel="noopener noreferrer">
+              Request a Call
             </a>
           </span>
         </div>

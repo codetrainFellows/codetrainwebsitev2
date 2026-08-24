@@ -125,20 +125,34 @@ section {
 
 /* Announcement + Nav */
 .announce {
-  background: var(--violet);
-  color: #EAF3EE;
+  background: var(--yellow);
+  color: var(--violet);
   font-size: 0.83rem;
   text-align: center;
-  padding: 10px 16px;
+  padding: 8px 16px;
   z-index: 90;
   position: relative;
 }
 
 .announce a {
-  color: var(--yellow);
-  font-weight: 600;
+  color: var(--violet);
+  font-weight: 700;
   text-decoration: underline;
   text-underline-offset: 2px;
+}
+
+.announce-mobile {
+  display: none;
+}
+
+@media (max-width: 640px) {
+  .announce-desktop {
+    display: none;
+  }
+
+  .announce-mobile {
+    display: inline;
+  }
 }
 
 nav {
@@ -207,6 +221,18 @@ nav {
   opacity: 0;
   transform: translateY(10px);
   transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+/* Invisible bridge over the gap above the menu so the hover chain
+   (.dropdown:hover) doesn't break while the cursor travels from the
+   trigger button down into the menu. */
+.dropdown-menu::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 0;
+  right: 0;
+  height: 10px;
 }
 
 .dropdown:hover .dropdown-menu,
@@ -976,6 +1002,112 @@ details p {
   aspect-ratio: 5/4;
   object-fit: cover;
   width: 100%;
+}
+
+/* PHOTO + STAT PANEL (hero story card) */
+.hero-story-photo {
+  position: relative;
+  border-radius: 20px;
+  box-shadow: var(--shadow);
+  aspect-ratio: 5/4;
+  overflow: hidden;
+}
+
+.hero-story-photo img {
+  border-radius: 0;
+  box-shadow: none;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-story-panel {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  bottom: 14px;
+  width: 58%;
+  background: var(--violet);
+  border-radius: 14px;
+  padding: 22px 18px;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  box-shadow: 0 14px 30px -12px rgba(27, 16, 73, 0.6);
+}
+
+.hero-story-name {
+  font-size: 1.2rem;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+}
+
+.hero-story-tag {
+  color: var(--yellow);
+  font-weight: 700;
+  font-size: 0.82rem;
+  margin-top: 6px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid rgba(255, 190, 12, 0.5);
+  display: inline-block;
+}
+
+.hero-story-stats {
+  list-style: none;
+  margin: 14px 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-story-stats li {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.hero-story-stats li:first-child {
+  border-top: none;
+}
+
+.hero-story-icon {
+  width: 27px;
+  height: 27px;
+  border-radius: 8px;
+  background: rgba(255, 190, 12, 0.16);
+  color: var(--yellow);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.hero-story-stats li > span:not(.hero-story-icon) {
+  font-size: 0.78rem;
+  line-height: 1.4;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.hero-story-stats b {
+  color: #fff;
+  font-weight: 700;
+}
+
+.hero-story-stats small {
+  display: block;
+  color: var(--yellow);
+  font-weight: 700;
+  font-size: 0.68rem;
+  margin-top: 2px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+@media (max-width: 720px) {
+  .hero-story-panel {
+    width: 68%;
+  }
 }
 
 .facts {
