@@ -240,10 +240,12 @@ export default function SolaraPageClient() {
           </div>
           <div className="story-wrap">
             <div className="story-card">
-              <div className="media-slot photo">
-                <span className="play" style={{ background: "var(--navy)" }}>🖼</span>
-                <span className="slot-label">Photo placeholder</span>
-                <span className="slot-meta">Jermaine on stage · 4:5 crop</span>
+              <div className="media-slot photo" style={{ padding: 0, overflow: "hidden" }}>
+                <img
+                  src="/people/jeremy.jpg"
+                  alt="Jermaine speaking on stage at Demo Day"
+                  style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "top center", display: "block" }}
+                />
               </div>
               <div className="body">
                 <p>
@@ -443,10 +445,12 @@ export default function SolaraPageClient() {
           </div>
           <div className="story-wrap">
             <div className="story-card">
-              <div className="media-slot photo">
-                <span className="play" style={{ background: "var(--navy)" }}>🖼</span>
-                <span className="slot-label">Photo placeholder</span>
-                <span className="slot-meta">Richard Brandt</span>
+              <div className="media-slot photo" style={{ padding: 0, overflow: "hidden" }}>
+                <img
+                  src="/people/richard.jpg"
+                  alt="Richard Brandt, Founder & CEO of Codetrain Africa"
+                  style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "top center", display: "block" }}
+                />
               </div>
               <div className="body">
                 <div className="name">Richard Brandt</div>

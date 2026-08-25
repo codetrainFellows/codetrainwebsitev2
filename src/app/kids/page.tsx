@@ -208,10 +208,22 @@ export default function Kids() {
             </span>
             <h2 style={{ fontSize: "1.45rem" }}>Jermaine's journey</h2>
             <p style={{ marginTop: "10px" }}>
-              At just 8 years old, Jermaine's parents recognised his passion for technology and enrolled him at
-              Codetrain. By 11, he had developed a COVID-19 statistics app. He mastered full-stack web development —
-              JavaScript, React, and MongoDB — alongside teamwork, public speaking, and technical communication.
-              Today he advises two companies and mentors at Moonshot Pirates in Austria.
+              Jermaine started his journey with Codetrain at just 8 years old, when his parents recognised his interest
+              in technology and made the decision to nurture it early.
+            </p>
+            <p style={{ marginTop: "10px" }}>
+              By 11, he had built a COVID-19 statistics app. At 12, he started his first company. As his technical
+              skills grew, so did his confidence, leadership, communication and ability to turn ideas into real projects.
+            </p>
+            <p style={{ marginTop: "10px" }}>
+              His journey went beyond the classroom. Jermaine gained real-world experience through an internship with a
+              technology startup and went on to mentor at Moonshot Pirates in Austria.
+            </p>
+            <p style={{ marginTop: "10px" }}>
+              Today, Jermaine has earned five full A-Level scholarship offers in the UK, including Eton College.
+            </p>
+            <p style={{ marginTop: "10px" }}>
+              His journey shows what is possible when a child's potential is discovered, nurtured and developed early.
             </p>
           </div>
         </div>
