@@ -419,13 +419,14 @@ export default function UniversityFellowship() {
             }
 
             .fellowship-page .cal-bar {
-              height: 34px;
+              min-height: 34px;
               border-radius: 8px;
               display: flex;
               align-items: center;
-              padding: 0 16px;
+              padding: 7px 16px;
               font-size: 0.82rem;
               font-weight: 700;
+              line-height: 1.3;
               color: #fff;
             }
 
@@ -436,7 +437,7 @@ export default function UniversityFellowship() {
             .fellowship-page .cal-bar.light {
               background: #B7AEE0;
               color: var(--violet);
-              width: 52%;
+              width: 68%;
             }
 
             .fellowship-page .cal-bar.sprint {
@@ -599,10 +600,23 @@ export default function UniversityFellowship() {
               color: var(--pink);
             }
 
-            /* faq */
+            /* faq — explicitly reset the card-style "details" rules from
+               globals.css (background, border-radius, margin-bottom, and
+               the open-state border/shadow) so this page's flat divider
+               list doesn't inherit them. */
             .fellowship-page details {
+              background: transparent;
+              border: none;
+              border-radius: 0;
               border-bottom: 1px solid var(--line);
+              margin-bottom: 0;
               padding: 22px 0;
+              box-shadow: none;
+            }
+
+            .fellowship-page details[open] {
+              border-color: var(--line);
+              box-shadow: none;
             }
 
             .fellowship-page summary {
@@ -612,6 +626,7 @@ export default function UniversityFellowship() {
               list-style: none;
               display: flex;
               justify-content: space-between;
+              align-items: center;
               gap: 16px;
               color: var(--violet);
             }
@@ -634,6 +649,7 @@ export default function UniversityFellowship() {
 
             .fellowship-page details p {
               margin-top: 12px;
+              margin-bottom: 0;
               font-size: 0.98rem;
               max-width: 640px;
             }
