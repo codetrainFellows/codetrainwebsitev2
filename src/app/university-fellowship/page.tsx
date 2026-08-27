@@ -82,6 +82,21 @@ export default function UniversityFellowship() {
               padding: 110px 0;
             }
 
+            /* Hard color-contrast transitions stack two full section paddings
+               into one very large gap — trim the padding on both sides of
+               those specific boundaries so the jump doesn't read as broken. */
+            .fellowship-page #selection {
+              padding-bottom: 60px;
+            }
+
+            .fellowship-page #selection + section {
+              padding-top: 60px;
+            }
+
+            .fellowship-page .dark.final {
+              padding-top: 70px;
+            }
+
             .fellowship-page .k {
               display: inline-block;
               font-size: 0.72rem;
@@ -662,6 +677,18 @@ export default function UniversityFellowship() {
                 padding: 80px 0;
               }
 
+              .fellowship-page #selection {
+                padding-bottom: 44px;
+              }
+
+              .fellowship-page #selection + section {
+                padding-top: 44px;
+              }
+
+              .fellowship-page .dark.final {
+                padding-top: 50px;
+              }
+
               .fellowship-page .hero {
                 padding: 90px 0;
               }
@@ -701,6 +728,18 @@ export default function UniversityFellowship() {
             @media (max-width: 640px) {
               .fellowship-page section {
                 padding: 60px 0;
+              }
+
+              .fellowship-page #selection {
+                padding-bottom: 36px;
+              }
+
+              .fellowship-page #selection + section {
+                padding-top: 36px;
+              }
+
+              .fellowship-page .dark.final {
+                padding-top: 40px;
               }
 
               .fellowship-page .hero {
