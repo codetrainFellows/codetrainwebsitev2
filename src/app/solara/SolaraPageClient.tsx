@@ -16,7 +16,7 @@ export default function SolaraPageClient() {
       {/* ANNOUNCEMENT */}
       <div className="announce">
         Applications are open for the 2026 Founding Cohort — limited to 40 Fellows.{" "}
-        <a href="#admissions">Apply Now</a>
+        <a href="https://tally.so/r/b510B7" target="_blank" rel="noopener noreferrer">Apply Now</a>
       </div>
 
       <header>
@@ -40,7 +40,7 @@ export default function SolaraPageClient() {
             <a href="#faq" onClick={() => setMenuOpen(false)}>FAQ</a>
           </div>
           <div className="navcta">
-            <a className="btn btn-amber" href="#admissions">
+            <a className="btn btn-amber" href="https://tally.so/r/b510B7" target="_blank" rel="noopener noreferrer">
               Apply Now
             </a>
             <button
@@ -90,7 +90,7 @@ export default function SolaraPageClient() {
                 <li>Join a fellowship built by the team behind Codetrain Africa — 700+ engineers trained since 2017</li>
               </ul>
               <div className="herobtns">
-                <a className="btn btn-amber" href="#admissions">
+                <a className="btn btn-amber" href="https://tally.so/r/b510B7" target="_blank" rel="noopener noreferrer">
                   Apply Now
                 </a>
                 <a className="btn btn-whatsapp" href="https://wa.me/233545792397" target="_blank" rel="noopener noreferrer">
@@ -423,7 +423,7 @@ export default function SolaraPageClient() {
             </div>
           </div>
           <div className="bandcta">
-            <a className="btn btn-amber" href="#admissions">
+            <a className="btn btn-amber" href="https://tally.so/r/b510B7" target="_blank" rel="noopener noreferrer">
               Apply Now
             </a>
             <a className="btn btn-navy" href="#curriculum">
@@ -657,7 +657,7 @@ export default function SolaraPageClient() {
             </div>
           </div>
           <div className="admit-cta">
-            <a className="btn btn-amber" href="#">
+            <a className="btn btn-amber" href="https://tally.so/r/b510B7" target="_blank" rel="noopener noreferrer">
               Start Your Application
             </a>
             <a className="btn btn-whatsapp" href="https://wa.me/233545792397" target="_blank" rel="noopener noreferrer">
@@ -713,7 +713,7 @@ export default function SolaraPageClient() {
                 </div>
               </div>
               <div className="btnrow">
-                <a className="btn btn-amber" href="#admissions">
+                <a className="btn btn-amber" href="https://tally.so/r/b510B7" target="_blank" rel="noopener noreferrer">
                   Enroll Now
                 </a>
                 <a className="btn btn-navy" href="#admissions">
@@ -817,7 +817,7 @@ export default function SolaraPageClient() {
             solara.africa
           </a>
           <div className="admit-cta">
-            <a className="btn btn-navy" href="#admissions" style={{ background: "#fff", color: "var(--pink)" }}>
+            <a className="btn btn-navy" href="https://tally.so/r/b510B7" target="_blank" rel="noopener noreferrer" style={{ background: "#fff", color: "var(--pink)" }}>
               Apply Now
             </a>
             <a className="btn btn-whatsapp" href="https://wa.me/233545792397" target="_blank" rel="noopener noreferrer">
@@ -862,8 +862,8 @@ export default function SolaraPageClient() {
               <a href="https://codetrainafrica.com" target="_blank" rel="noopener noreferrer">
                 Codetrain Africa
               </a>
-              <a href="#">Contact Admissions</a>
-              <a href="#">+233 545 792 397</a>
+              <a href="mailto:admissions@solara.africa">Contact Admissions</a>
+              <a href="tel:+233545792397">+233 545 792 397</a>
             </div>
           </div>
           <div className="foot-bottom">
@@ -875,7 +875,7 @@ export default function SolaraPageClient() {
 
       {/* STICKY MOBILE CTA BAR */}
       <div className="sticky-cta">
-        <a className="btn btn-amber" href="#admissions">
+        <a className="btn btn-amber" href="https://tally.so/r/b510B7" target="_blank" rel="noopener noreferrer">
           Apply Now
         </a>
         <a className="btn btn-whatsapp" href="https://wa.me/233545792397" target="_blank" rel="noopener noreferrer">
