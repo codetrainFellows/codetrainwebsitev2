@@ -767,7 +767,7 @@ export default function UniversityFellowship() {
           <div className="hero-ctas">
             <a
               className="btn btn-y"
-              href="https://tally.so/r/b510B7"
+              href="https://tally.so/r/q4QAvd"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -803,7 +803,7 @@ export default function UniversityFellowship() {
           <div>
             <span className="k">Why this exists</span>
             <p>
-              Every year, thousands of students graduate with the same certificate. Employers can't tell them apart — so
+              Every year, thousands of students graduate with the same certificate. Employers can&apos;t tell them apart — so
               they hire the ones who can <b>build</b>. The Fellowship exists to make you one of them: a university student
               who ships real software, presents real work, and walks into interviews with proof instead of promises.
             </p>
@@ -926,7 +926,7 @@ export default function UniversityFellowship() {
               <div className="dot"></div>
               <h3>A pathway forward</h3>
               <p>
-                Top Fellows may earn advanced standing into Codetrain's flagship programme, or consideration for the AI
+                Top Fellows may earn advanced standing into Codetrain&apos;s flagship programme, or consideration for the AI
                 Program.
               </p>
             </div>
@@ -944,7 +944,7 @@ export default function UniversityFellowship() {
         <div className="wrap fit">
           <div>
             <span className="k">Built for students</span>
-            <h2>Your degree stays first. Your skills don't wait.</h2>
+            <h2>Your degree stays first. Your skills don&apos;t wait.</h2>
             <ul>
               <li>
                 Residencies run during vacation
@@ -962,7 +962,7 @@ export default function UniversityFellowship() {
               </li>
               <li>
                 Finish before finals
-                <span>The May sprint and Demo Day wrap before the academic year's heaviest period.</span>
+                <span>The May sprint and Demo Day wrap before the academic year&apos;s heaviest period.</span>
               </li>
             </ul>
           </div>
@@ -993,7 +993,7 @@ export default function UniversityFellowship() {
               Chosen, not sold.
             </h2>
             <p style={{ marginTop: "16px" }}>
-              Admission is competitive. We're not selecting for experience — we're selecting for trajectory.
+              Admission is competitive. We&apos;re not selecting for experience — we&apos;re selecting for trajectory.
             </p>
           </div>
           <div>
@@ -1063,22 +1063,22 @@ export default function UniversityFellowship() {
           <details>
             <summary>Can I do this alongside my degree?</summary>
             <p>
-              That's the entire design. The intensive residencies run during the long vacation and the May window, and
+              That&apos;s the entire design. The intensive residencies run during the long vacation and the May window, and
               the semester track is 3–5 hours a week — lighter than one extra course. Your degree stays first.
             </p>
           </details>
           <details>
-            <summary>Can this satisfy my university's internship or attachment requirement?</summary>
+            <summary>Can this satisfy my university&apos;s internship or attachment requirement?</summary>
             <p>
               Yes — Residency I is structured to function as your internship. Each Fellow takes on a real problem
               facing a business or community in Ghana, builds a working solution, and demos it live at the end. With a
               named mentor and a completion letter documenting your work and hours, the residency serves as your
               internship or industrial attachment. Requirements differ by department, so check with your coordinator
-              on what they'll accept.
+              on what they&apos;ll accept.
             </p>
           </details>
           <details>
-            <summary>I've never written code. Can I still apply?</summary>
+            <summary>I&apos;ve never written code. Can I still apply?</summary>
             <p>
               Yes. The Fellowship starts from first principles. We select for drive, teachability, and commitment — not
               prior experience.
@@ -1095,7 +1095,7 @@ export default function UniversityFellowship() {
             <summary>What happens after the Fellowship?</summary>
             <p>
               You leave with a shipped portfolio, Demo Day exposure to employers, and a Codetrain Fellowship
-              certificate. Top Fellows may earn advanced standing into Codetrain's flagship programme or consideration for
+              certificate. Top Fellows may earn advanced standing into Codetrain&apos;s flagship programme or consideration for
               the AI Program.
             </p>
           </details>
@@ -1120,14 +1120,14 @@ export default function UniversityFellowship() {
         <div className="wrap">
           <span className="k">Applications open</span>
           <h2>
-            One year from now, you'll be a different engineer.
+            One year from now, you&apos;ll be a different engineer.
             <br />
             Or the same student.
           </h2>
           <p>Thirty seats. September start. The application takes ten minutes — the interview is where you earn it.</p>
           <a
             className="btn btn-y"
-            href="https://tally.so/r/b510B7"
+            href="https://tally.so/r/q4QAvd"
             target="_blank"
             rel="noopener noreferrer"
           >

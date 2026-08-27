@@ -928,25 +928,22 @@ details p {
 .partner-row {
   display: flex;
   flex-wrap: wrap;
-  gap: 12px;
+  gap: 28px;
   justify-content: center;
+  align-items: center;
 }
 
-.partner-row span {
-  border: 1px solid var(--line);
-  background: #fff;
-  border-radius: 999px;
-  padding: 9px 20px;
-  font-size: 0.85rem;
-  font-weight: 600;
-  color: var(--sub);
-  transition: var(--transition-fast);
+.partner-row img {
+  height: 22px;
+  min-width: 40px;
+  max-width: 80px;
+  width: auto;
+  object-fit: contain;
 }
 
-.partner-row span:hover {
-  background: var(--violet-soft);
-  color: var(--violet);
-  border-color: var(--violet);
+.partner-row img:hover {
+  filter: grayscale(0%);
+  opacity: 1;
 }
 
 /* CTA Band */

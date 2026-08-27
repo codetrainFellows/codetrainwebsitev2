@@ -18,7 +18,7 @@ export default function Kids() {
             </span>
             <h1>Codetrain Solara — Coding for Kids</h1>
             <p className="lede">
-              Unlock your child's potential with Africa's premier online school for future innovators. Through hands-on,
+              Unlock your child&apos;s potential with Africa&apos;s premier online school for future innovators. Through hands-on,
               project-based learning that combines coding, AI, creativity, and leadership, Solara transforms kids
               into world-class innovators, leaders, and entrepreneurs.
             </p>
@@ -121,7 +121,7 @@ export default function Kids() {
         <div className="wrap">
           <div className="section-head">
             <span className="kicker" style={{ color: "#9A7100", background: "#FFF3D1" }}>
-              Your child's journey
+              Your child&apos;s journey
             </span>
             <h2>What your child will grow into</h2>
             <p>
@@ -206,7 +206,7 @@ export default function Kids() {
             <span className="kicker" style={{ color: "#9A7100", background: "#FFF3D1" }}>
               Proof it works
             </span>
-            <h2 style={{ fontSize: "1.45rem" }}>Jermaine's journey</h2>
+            <h2 style={{ fontSize: "1.45rem" }}>Jermaine&apos;s journey</h2>
             <p style={{ marginTop: "10px" }}>
               Jermaine started his journey with Codetrain at just 8 years old, when his parents recognised his interest
               in technology and made the decision to nurture it early.
@@ -223,7 +223,7 @@ export default function Kids() {
               Today, Jermaine has earned five full A-Level scholarship offers in the UK, including Eton College.
             </p>
             <p style={{ marginTop: "10px" }}>
-              His journey shows what is possible when a child's potential is discovered, nurtured and developed early.
+              His journey shows what is possible when a child&apos;s potential is discovered, nurtured and developed early.
             </p>
           </div>
         </div>

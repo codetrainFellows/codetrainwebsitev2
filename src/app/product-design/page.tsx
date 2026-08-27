@@ -18,7 +18,7 @@ export default function ProductDesign() {
             <h1>Product Design and AI</h1>
             <p className="lede">
               Graduates design digital products from research through to live, published applications — working in
-              Ghana's growing tech sector, African startups, and with international clients who need African designers
+              Ghana&apos;s growing tech sector, African startups, and with international clients who need African designers
               who understand local contexts.
             </p>
             <div className="hero-ctas">
@@ -71,7 +71,7 @@ export default function ProductDesign() {
             <span className="kicker" style={{ color: "var(--pink)", background: "#FFE5F0" }}>
               Curriculum
             </span>
-            <h2>What you'll build, phase by phase</h2>
+            <h2>What you&apos;ll build, phase by phase</h2>
             <p>
               Four milestone-gated phases — fundamentals first, then AI-assisted workflows, then real, published
               products.
@@ -116,7 +116,7 @@ export default function ProductDesign() {
                 <p>
                   Framer — a no-code design tool for building real websites and apps. Motion design, collaboration
                   with developers, and a real client brief. <b>Milestone 3:</b> a live, published Framer product — it
-                  must work on the assessment panel's own device.
+                  must work on the assessment panel&apos;s own device.
                 </p>
               </div>
             </div>
@@ -168,7 +168,7 @@ export default function ProductDesign() {
               <tr>
                 <td>M3 — Published Framer Product</td>
                 <td>End of Month 9</td>
-                <td>The site must be live on the panel's device on assessment day</td>
+                <td>The site must be live on the panel&apos;s device on assessment day</td>
               </tr>
               <tr>
                 <td>M4 — Graduation Capstone</td>
@@ -199,20 +199,20 @@ export default function ProductDesign() {
           </div>
           <div>
             <span className="kicker" style={{ color: "var(--pink)", background: "#FFE5F0" }}>
-              Who it's for
+              Who it&apos;s for
             </span>
             <h2 style={{ fontSize: "1.45rem" }}>This programme is right for you if…</h2>
             <ul className="checks">
-              <li>You're a complete beginner with no design experience</li>
-              <li>You're a working professional in any field who wants to move into product design or UX</li>
-              <li>You're visual and creative and want a structured, professional pathway</li>
-              <li>You've used apps and wanted to design them instead</li>
+              <li>You&apos;re a complete beginner with no design experience</li>
+              <li>You&apos;re a working professional in any field who wants to move into product design or UX</li>
+              <li>You&apos;re visual and creative and want a structured, professional pathway</li>
+              <li>You&apos;ve used apps and wanted to design them instead</li>
               <li>You work in finance, healthcare, education, admin, or communication and want to pivot into tech</li>
             </ul>
             <div style={{ marginTop: "24px", display: "flex", gap: "12px", flexWrap: "wrap" }}>
               <a
                 className="btn btn-primary"
-                href="https://tally.so/r/b510B7"
+                href="https://tally.so/r/xX5jKy"
                 target="_blank"
                 rel="noopener noreferrer"
               >

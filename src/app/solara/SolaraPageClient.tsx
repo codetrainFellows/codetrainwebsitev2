@@ -191,17 +191,17 @@ export default function SolaraPageClient() {
               <span className="tag2">Global Proof Point</span>
               <h4>Two African Engineers. Y Combinator. A $200M Acquisition.</h4>
               <p>
-                Paystack was built by two engineers in a Lagos apartment. It became the first Nigerian startup accepted into Y Combinator — the world's top startup accelerator — and in 2020, Stripe acquired it for over $200 million. Proof that African-built technology can compete and win on the global stage.
+                Paystack was built by two engineers in a Lagos apartment. It became the first Nigerian startup accepted into Y Combinator — the world&apos;s top startup accelerator — and in 2020, Stripe acquired it for over $200 million. Proof that African-built technology can compete and win on the global stage.
               </p>
               <p style={{ fontSize: ".78rem", marginTop: "10px", fontStyle: "italic" }}>
-                Paystack has no connection to Codetrain or Solara — it's included as proof of what's possible for African-built technology, not a guaranteed outcome.
+                Paystack has no connection to Codetrain or Solara — it&apos;s included as proof of what&apos;s possible for African-built technology, not a guaranteed outcome.
               </p>
             </div>
             <div className="outcome-card">
               <span className="tag2">Founder at 12</span>
               <h4>A Portfolio That Stands Out Globally</h4>
               <p>
-                Jermaine founded his first startup, Zest, at 12. At 15, he's Lead Design Engineer on CediRates — a live product with 100,000 monthly active users — and heading to the UK on A-Level scholarship this August. Built on real, shipped work, not test scores alone. That's the same portfolio model every Solara Fellow graduates with.
+                Jermaine founded his first startup, Zest, at 12. At 15, he&apos;s Lead Design Engineer on CediRates — a live product with 100,000 monthly active users — and heading to the UK on A-Level scholarship this August. Built on real, shipped work, not test scores alone. That&apos;s the same portfolio model every Solara Fellow graduates with.
               </p>
               <p style={{ fontSize: ".78rem", marginTop: "10px", fontStyle: "italic" }}>
                 Individual outcomes vary. Solara does not promise scholarships, admission, or startup outcomes for any Fellow.
@@ -225,7 +225,7 @@ export default function SolaraPageClient() {
             </div>
           </div>
           <p className="outcome-fineprint">
-            Figures reflect 2026 US market data (Levels.fyi, Robert Half Salary Guide) and are shown for general context only — they are not a projection, guarantee, or promise of any individual Fellow's future earnings.
+            Figures reflect 2026 US market data (Levels.fyi, Robert Half Salary Guide) and are shown for general context only — they are not a projection, guarantee, or promise of any individual Fellow&apos;s future earnings.
           </p>
         </div>
       </section>
@@ -249,7 +249,7 @@ export default function SolaraPageClient() {
               </div>
               <div className="body">
                 <p>
-                  Jermaine's journey shows what's possible when a child starts early, builds consistently, and has the right mentors behind them. By 12 he had founded his first startup; at 15 he's leading design engineering on a product with 100,000 monthly users. His path isn't a guarantee for every fellow — it's proof of what becomes possible.
+                  Jermaine&apos;s journey shows what&apos;s possible when a child starts early, builds consistently, and has the right mentors behind them. By 12 he had founded his first startup; at 15 he&apos;s leading design engineering on a product with 100,000 monthly users. His path isn&apos;t a guarantee for every fellow — it&apos;s proof of what becomes possible.
                 </p>
                 <hr />
                 <div className="name">Jermaine Antwi</div>
@@ -263,7 +263,7 @@ export default function SolaraPageClient() {
                 <div className="tl-item">
                   <span className="age">Age 9</span>
                   <span className="desc">
-                    Joins Codetrain's Software Engineering programme (2020–2022), after years of building on his family's business, JubAy Avenue.
+                    Joins Codetrain&apos;s Software Engineering programme (2020–2022), after years of building on his family&apos;s business, JubAy Avenue.
                   </span>
                 </div>
                 <div className="tl-item">
@@ -283,7 +283,7 @@ export default function SolaraPageClient() {
                   </span>
                 </div>
               </div>
-              <p className="disclaimer">Individual outcomes vary. Jermaine's journey began through Codetrain, the team building Solara.</p>
+              <p className="disclaimer">Individual outcomes vary. Jermaine&apos;s journey began through Codetrain, the team building Solara.</p>
             </div>
           </div>
         </div>
@@ -299,7 +299,7 @@ export default function SolaraPageClient() {
         <div className="wrap content">
           <h2>Hear It From Jermaine</h2>
           <p className="body">
-            In his own words: what it felt like to start coding at eight, what building his first real app taught him, and what he'd tell a Solara Fellow just starting out.
+            In his own words: what it felt like to start coding at eight, what building his first real app taught him, and what he&apos;d tell a Solara Fellow just starting out.
           </p>
           <div className="video-card" style={{ maxWidth: "640px" }}>
             <div className="media-slot video-wide">
@@ -320,7 +320,7 @@ export default function SolaraPageClient() {
         <div className="wrap">
           <div className="section-head">
             <span className="eyebrow">The Fellowship Model</span>
-            <h2>Here's how we get them there.</h2>
+            <h2>Here&apos;s how we get them there.</h2>
             <p>Solara Fellows progress through three years of increasingly ambitious projects, mentorship and challenges.</p>
           </div>
           <div className="years">
@@ -381,7 +381,7 @@ export default function SolaraPageClient() {
                 <path d="M8 20h8M12 16v4" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" />
               </svg>
               <h4>Computer Science</h4>
-              <p>Logic, puzzles, and computational thinking — the fundamentals of how computers "think."</p>
+              <p>Logic, puzzles, and computational thinking — the fundamentals of how computers &quot;think.&quot;</p>
             </div>
             <div className="pillar">
               <svg className="ic" viewBox="0 0 24 24" fill="none">
@@ -437,7 +437,7 @@ export default function SolaraPageClient() {
       <section id="team">
         <div className="wrap">
           <div className="section-head">
-            <span className="eyebrow">Who's Behind Solara</span>
+            <span className="eyebrow">Who&apos;s Behind Solara</span>
             <h2>Led by a founder, not an app.</h2>
             <p>
               Solara is built and run personally by the founder of Codetrain Africa — not a franchise, not outsourced, not a course licensed from somewhere else.
@@ -466,10 +466,10 @@ export default function SolaraPageClient() {
                   <span style={{ color: "var(--pink)", fontWeight: 700 }}>•</span>Completed the two-year MEST Africa entrepreneurship programme and Startup Chile
                 </li>
                 <li style={{ display: "flex", gap: "10px", marginBottom: "14px", fontSize: ".95rem", color: "var(--ink)", fontWeight: 500 }}>
-                  <span style={{ color: "var(--pink)", fontWeight: 700 }}>•</span>Recipient of the World Summit Youth Award and named among Ghana's 50 Most Influential Youth
+                  <span style={{ color: "var(--pink)", fontWeight: 700 }}>•</span>Recipient of the World Summit Youth Award and named among Ghana&apos;s 50 Most Influential Youth
                 </li>
                 <li style={{ display: "flex", gap: "10px", marginBottom: "14px", fontSize: ".95rem", color: "var(--ink)", fontWeight: 500 }}>
-                  <span style={{ color: "var(--pink)", fontWeight: 700 }}>•</span>Built partnerships with GIZ (the German government's development agency) and Chancen International
+                  <span style={{ color: "var(--pink)", fontWeight: 700 }}>•</span>Built partnerships with GIZ (the German government&apos;s development agency) and Chancen International
                 </li>
               </ul>
               <p className="disclaimer" style={{ marginTop: "6px" }}>
@@ -484,10 +484,10 @@ export default function SolaraPageClient() {
       <section className="gray-band">
         <div className="wrap content">
           <div className="section-head">
-            <span className="eyebrow">Your Child's Safety &amp; Belonging</span>
+            <span className="eyebrow">Your Child&apos;s Safety &amp; Belonging</span>
             <h2 style={{ textTransform: "none" }}>Safeguarding &amp; Inclusion Come First</h2>
             <p>
-              We know you're trusting us with your child. That's a responsibility we take as seriously as the curriculum — and it includes making sure every kind of learner belongs here.
+              We know you&apos;re trusting us with your child. That&apos;s a responsibility we take as seriously as the curriculum — and it includes making sure every kind of learner belongs here.
             </p>
           </div>
           <div className="safe-grid">
@@ -520,7 +520,7 @@ export default function SolaraPageClient() {
               </svg>
               <h4>Neurodivergent-Friendly Studios</h4>
               <p>
-                Flexible pacing, sensory-considerate spaces, and mentors trained to support different learning styles — following Codetrain's existing inclusion practice for neurodivergent learners.
+                Flexible pacing, sensory-considerate spaces, and mentors trained to support different learning styles — following Codetrain&apos;s existing inclusion practice for neurodivergent learners.
               </p>
             </div>
             <div className="safe-card">
@@ -553,7 +553,7 @@ export default function SolaraPageClient() {
           </div>
           <div className="testi-grid">
             <div className="testi-card">
-              <p className="quote">"Placeholder — replace with a real parent quote once the pilot cohort has run a term."</p>
+              <p className="quote">&quot;Placeholder — replace with a real parent quote once the pilot cohort has run a term.&quot;</p>
               <div className="who">
                 <div className="avatar"></div>
                 <div>
@@ -563,7 +563,7 @@ export default function SolaraPageClient() {
               </div>
             </div>
             <div className="testi-card">
-              <p className="quote">"Placeholder — replace with a real parent quote once the pilot cohort has run a term."</p>
+              <p className="quote">&quot;Placeholder — replace with a real parent quote once the pilot cohort has run a term.&quot;</p>
               <div className="who">
                 <div className="avatar"></div>
                 <div>
@@ -573,7 +573,7 @@ export default function SolaraPageClient() {
               </div>
             </div>
             <div className="testi-card">
-              <p className="quote">"Placeholder — replace with a real parent quote once the pilot cohort has run a term."</p>
+              <p className="quote">&quot;Placeholder — replace with a real parent quote once the pilot cohort has run a term.&quot;</p>
               <div className="who">
                 <div className="avatar"></div>
                 <div>
@@ -681,7 +681,7 @@ export default function SolaraPageClient() {
           <div className="section-head">
             <span className="eyebrow">Tuition</span>
             <h2>Our Fees</h2>
-            <p>Investing in your child's future is an important decision. We offer flexible payment plans to make the fellowship accessible.</p>
+            <p>Investing in your child&apos;s future is an important decision. We offer flexible payment plans to make the fellowship accessible.</p>
           </div>
           <div className="fee-card">
             <div className="head">
@@ -689,7 +689,7 @@ export default function SolaraPageClient() {
             </div>
             <div className="body">
               <p>
-                Our three-year fellowship is priced at <b>GHS 12,000</b> per year, covering mentorship, curriculum, Demo Days, Engineering Labs and the Builder's Portfolio.
+                Our three-year fellowship is priced at <b>GHS 12,000</b> per year, covering mentorship, curriculum, Demo Days, Engineering Labs and the Builder&apos;s Portfolio.
               </p>
               <p style={{ marginTop: "10px" }}>
                 We offer flexible payment options and Merit Fellowships based on potential and financial need. Every Fellow graduates with a signed <b>Certificate of Completion</b>.
@@ -811,7 +811,7 @@ export default function SolaraPageClient() {
         <div className="wrap">
           <h2>Talk To Us</h2>
           <p style={{ color: "rgba(255,255,255,0.85)", maxWidth: "480px", margin: "0 auto 26px" }}>
-            Every remarkable journey starts with curiosity. Let's talk about whether Solara is right for your child.
+            Every remarkable journey starts with curiosity. Let&apos;s talk about whether Solara is right for your child.
           </p>
           <a className="pink-pill" href="#admissions">
             solara.africa

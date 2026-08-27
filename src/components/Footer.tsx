@@ -15,7 +15,7 @@ export default function Footer() {
               />
             </span>
             <p style={{ color: "#B9B3D6", fontSize: ".88rem" }}>
-              Ghana's leading AI and software engineering training institution.
+              Ghana&apos;s leading AI and software engineering training institution.
               In-person at East Legon, Accra — and live online, wherever you are.
             </p>
           </div>
@@ -30,9 +30,7 @@ export default function Footer() {
           <div>
             <h4>Company</h4>
             <Link href="/hire">Hire a graduate</Link>
-            <a href="https://codetrainafrica.com/success-stories" target="_blank" rel="noopener noreferrer">
-              Success stories
-            </a>
+            <Link href="/#stories">Success stories</Link>
             <a href="https://codetrain.medium.com/" target="_blank" rel="noopener noreferrer">
               Blog
             </a>

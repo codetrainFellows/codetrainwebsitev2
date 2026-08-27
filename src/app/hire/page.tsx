@@ -16,7 +16,7 @@ export default function Hire() {
             <h1>Hire graduates who can ship from day one</h1>
             <p className="lede">
               Codetrain graduates are trained on real projects with modern AI tooling, vetted through milestone
-              assessments, and proven at Demo Day. Tell us the role — we'll match you with job-ready AI developers and
+              assessments, and proven at Demo Day. Tell us the role — we&apos;ll match you with job-ready AI developers and
               product designers at no cost to you.
             </p>
             <div className="hero-ctas">

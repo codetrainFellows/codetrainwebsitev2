@@ -67,7 +67,7 @@ export default function SoftwareEngineering() {
         <div className="wrap">
           <div className="section-head">
             <span className="kicker">Curriculum</span>
-            <h2>What you'll build, phase by phase</h2>
+            <h2>What you&apos;ll build, phase by phase</h2>
             <p>
               Three milestone-gated phases. You cannot advance without passing each milestone — so what you know at
               the end is real.
@@ -172,19 +172,19 @@ export default function SoftwareEngineering() {
             </ul>
           </div>
           <div>
-            <span className="kicker">Who it's for</span>
+            <span className="kicker">Who it&apos;s for</span>
             <h2 style={{ fontSize: "1.45rem" }}>This programme is right for you if…</h2>
             <ul className="checks">
-              <li>You're a complete beginner — no prior coding experience required</li>
-              <li>You're a university student or recent graduate who wants real, applicable skills</li>
-              <li>You're a young professional entering the software industry</li>
+              <li>You&apos;re a complete beginner — no prior coding experience required</li>
+              <li>You&apos;re a university student or recent graduate who wants real, applicable skills</li>
+              <li>You&apos;re a young professional entering the software industry</li>
               <li>You want to build products, not just use them</li>
               <li>You want to work for international companies remotely from Ghana</li>
             </ul>
             <div style={{ marginTop: "24px", display: "flex", gap: "12px", flexWrap: "wrap" }}>
               <a
                 className="btn btn-primary"
-                href="https://tally.so/r/b510B7"
+                href="https://tally.so/r/eqWDvo"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -219,7 +219,7 @@ export default function SoftwareEngineering() {
             <span className="kicker" style={{ background: "#fff", border: "1px solid var(--line)" }}>
               Not required
             </span>
-            <h2 style={{ fontSize: "1.45rem" }}>What you don't need</h2>
+            <h2 style={{ fontSize: "1.45rem" }}>What you don&apos;t need</h2>
             <ul className="checks crosses">
               <li>A computer science certificate</li>
               <li>Previous tech experience</li>

@@ -18,7 +18,7 @@ export default function AiProgram() {
             <h1>AI Program ( For Software Developers )</h1>
             <p className="lede">
               A 16-week intensive that turns experienced web developers into AI engineers. If you build with JavaScript
-              today, you'll leave shipping production AI systems — LLM-powered apps, RAG pipelines, and agents — with
+              today, you&apos;ll leave shipping production AI systems — LLM-powered apps, RAG pipelines, and agents — with
               a deployed capstone product that has real users.
             </p>
             <div className="hero-ctas">
@@ -72,7 +72,7 @@ export default function AiProgram() {
               Curriculum
             </span>
             <h2>Four blocks. Build before theory.</h2>
-            <p>You'll understand everything you ship — and ship production systems, not demos.</p>
+            <p>You&apos;ll understand everything you ship — and ship production systems, not demos.</p>
           </div>
           <div className="blocks">
             <div className="block">
@@ -135,7 +135,7 @@ export default function AiProgram() {
         <div className="wrap twocol">
           <div>
             <span className="kicker" style={{ color: "var(--indigo)", background: "#F0E7FD" }}>
-              Tools you'll work with
+              Tools you&apos;ll work with
             </span>
             <h2 style={{ fontSize: "1.45rem" }}>The modern AI engineering stack</h2>
             <ul className="checks">
@@ -161,7 +161,7 @@ export default function AiProgram() {
             <div style={{ marginTop: "22px" }}>
               <a
                 className="btn btn-primary"
-                href="https://tally.so/r/b510B7"
+                href="https://tally.so/r/ODMlO7"
                 target="_blank"
                 rel="noopener noreferrer"
               >

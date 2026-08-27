@@ -22,7 +22,7 @@ export default function Home() {
           <div>
             <span className="kicker">Accra · In-person &amp; online · Since 2017</span>
             <h1>
-              Ghana's leading <span className="accent">AI &amp; software engineering</span> training institution.
+              Ghana&apos;s leading <span className="accent">AI &amp; software engineering</span> training institution.
             </h1>
             <ul>
               <li>We take complete beginners and turn them into job-ready tech professionals in 18 months.</li>
@@ -91,7 +91,7 @@ export default function Home() {
             <span className="kicker">Our Courses</span>
             <h2>Find the right course for where you are today</h2>
             <p>
-              Starting from zero, already a developer, a busy professional, or a parent — there's a Codetrain course
+              Starting from zero, already a developer, a busy professional, or a parent — there&apos;s a Codetrain course
               built for you.
             </p>
           </div>
@@ -270,7 +270,7 @@ export default function Home() {
                 <p>
                   A one-year fellowship for university students who want real engineering experience, not just a
                   certificate. Two residencies bookend a semester of guided practice: build real skills, solve a real
-                  problem for a Ghanaian business or community, and demo it live — with a mentor's sign-off and a
+                  problem for a Ghanaian business or community, and demo it live — with a mentor&apos;s sign-off and a
                   completion letter covering your internship hours.
                 </p>
                 <div className="facts-line">
@@ -313,7 +313,7 @@ export default function Home() {
                 </div>
                 <h3>Codetrain Solara — Coding for Kids</h3>
                 <p>
-                  Africa's premier online school for future innovators. Through project-based learning in coding,
+                  Africa&apos;s premier online school for future innovators. Through project-based learning in coding,
                   AI, and leadership, kids build real apps and games — and grow into innovators, leaders, and
                   entrepreneurs. Includes an in-person Summer Bootcamp and Annual Innovation Conference.
                 </p>
@@ -370,7 +370,7 @@ export default function Home() {
             <div style={{ marginTop: "22px", display: "flex", gap: "12px", flexWrap: "wrap" }}>
               <a
                 className="btn btn-primary"
-                href="https://tally.so/r/b510B7"
+                href="https://tally.so/r/LZLzQ1"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -419,7 +419,7 @@ export default function Home() {
               />
               <div className="story-body">
                 <p>
-                  Gerald was hired on the spot by Meqasa's CEO during Demo Day. He now works at Hubtel, building
+                  Gerald was hired on the spot by Meqasa&apos;s CEO during Demo Day. He now works at Hubtel, building
                   expertise, solving problems, and growing his software development career.
                 </p>
                 <div className="who">
@@ -445,16 +445,6 @@ export default function Home() {
               </div>
             </article>
           </div>
-          <p className="center" style={{ marginTop: "30px" }}>
-            <a
-              className="btn btn-outline"
-              href="https://codetrainafrica.com/success-stories"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Discover more success stories
-            </a>
-          </p>
         </div>
       </section>
 
@@ -528,17 +518,17 @@ export default function Home() {
             <h2 style={{ fontSize: "1.4rem" }}>Trusted by leading organisations</h2>
           </div>
           <div className="partner-row">
-            <span>GIZ</span>
-            <span>SAP</span>
-            <span>Chancen International</span>
-            <span>Bloomberg</span>
-            <span>I&amp;P Investments</span>
-            <span>Berlin Partner</span>
-            <span>Jobberman</span>
-            <span>BlackInTech</span>
-            <span>Kaatch</span>
-            <span>Terratalent</span>
-            <span>AfricaBerlin</span>
+            <img src="/images/giz-logo.gif" alt="GIZ" />
+            <img src="/images/sap.jpg" alt="SAP" />
+            <img src="/images/chancen.png" alt="Chancen International" />
+            <img src="/images/bloomberg.png" alt="Bloomberg" />
+            <img src="/images/ip.png" alt="I&amp;P Investments" />
+            <img src="/images/berlinpartner.png" alt="Berlin Partner" />
+            <img src="/images/jobberman.png" alt="Jobberman" />
+            <img src="/images/blackintech.png" alt="BlackInTech" />
+            <img src="/images/kaatch.png" alt="Kaatch" />
+            <img src="/images/terratallent.png" alt="Terratalent" />
+            <img src="/images/africanberlin.png" alt="AfricaBerlin" />
           </div>
         </div>
       </section>
@@ -589,7 +579,7 @@ export default function Home() {
               <div style={{ marginTop: "20px", display: "flex", gap: "12px", flexWrap: "wrap" }}>
                 <a
                   className="btn btn-primary btn-sm"
-                  href="https://codetrainafrica.com/payment-plan"
+                  href="https://tally.so/r/LZLzQ1"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -686,7 +676,7 @@ export default function Home() {
             <details>
               <summary>Do I need any tech background to join?</summary>
               <p>
-                No. You don't need a degree, a computer science certificate, or previous tech experience. Most of
+                No. You don&apos;t need a degree, a computer science certificate, or previous tech experience. Most of
                 our graduates started from zero — including a medical doctor, a finance executive, and a former
                 farm worker. You need computer literacy, teachability, willingness to put in the work — and to pass
                 our intake assessment.
@@ -703,12 +693,12 @@ export default function Home() {
             <details>
               <summary>Can I join while working or still in school?</summary>
               <p>
-                Yes — that's exactly what our weekend class is for. Both delivery modes (in-person and online) offer
+                Yes — that&apos;s exactly what our weekend class is for. Both delivery modes (in-person and online) offer
                 weekday or weekend schedules, so you can train without leaving your current job or studies.
               </p>
             </details>
             <details>
-              <summary>I'm not in Accra. Can I still join?</summary>
+              <summary>I&apos;m not in Accra. Can I still join?</summary>
               <p>
                 Yes. Our online classes are live and interactive — same sessions, same instructors, same milestones
                 as in-person. Students have joined from Kumasi, Cape Coast, Tamale, and from Nigeria, Cameroon,
@@ -733,7 +723,7 @@ export default function Home() {
             </details>
             <details>
               <summary>Does Codetrain provide laptops?</summary>
-              <p>Not currently — you'll need your own laptop for training.</p>
+              <p>Not currently — you&apos;ll need your own laptop for training.</p>
             </details>
           </div>
         </div>

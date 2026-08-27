@@ -12,6 +12,7 @@ const helvetica = localFont({
   src: "../../public/fonts/helvetica.ttf",
   variable: "--font-sans",
   display: "swap",
+  fallback: ["Helvetica Neue", "Arial", "sans-serif"],
 });
 
 // Keep Outfit Google Font for display headings to maintain the modern redesigned look
